@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #f9f9f9;
+  --text-main: #111111;
+  --border-color: #000000;
+  --border-light: #cccccc;
+  --color-pos: #2ECC71;
+  --color-neg: #E74C3C;
+  --color-neu: #BDBDBD;
+  --header-h: 60px;
+  --ticker-h: 60px;
+}
+
+body {
+  font-family: var(--font-space-mono), monospace;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom scrollbars and animations */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.blink-dot {
+  animation: blink 1.5s infinite ease-in-out;
+}
