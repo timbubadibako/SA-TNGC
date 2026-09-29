@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNGC Aspect-Based Sentiment Arena & AI Policy Intelligence</title>
+    
+    <!-- Typography: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        :root {
+            --bg-base: #0B0F17;
+            --bg-surface: #121824;
+            --bg-elevated: #1A2333;
+            --border-subtle: #232E42;
+            --border-strong: #2F3E58;
+            --text-primary: #F1F5F9;
+            --text-secondary: #94A3B8;
+            --text-muted: #64748B;
+            --accent-primary: #38BDF8;
+            --accent-glow: rgba(56, 189, 248, 0.15);
+            --sentiment-pos: #10B981;
+            --sentiment-neu: #F59E0B;
+            --sentiment-neg: #EF4444;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Top Navigation */
+        header {
+            height: 60px;
+            background: var(--bg-surface);
+            border-bottom: 1px solid var(--border-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+            flex-shrink: 0;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-logo {
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, #0284C7, #38BDF8);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .brand-title {
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+        }
+
+        .brand-tag {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: var(--accent-primary);
+            background: var(--accent-glow);
+            padding: 2px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        .status-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--sentiment-pos);
+            box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+        }
+
+        /* 3-Column Studio Layout */
+        .workspace {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 280px 1fr 420px;
+            overflow: hidden;
+        }
+
+        /* Column 1: Filter & Metadata */
+        .panel-sidebar {
+            background: var(--bg-surface);
+            border-right: 1px solid var(--border-subtle);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            overflow-y: auto;
+        }
+
+        .section-label {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .custom-select {
+            width: 100%;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            color: var(--text-primary);
+            padding: 10px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            outline: none;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+
+        .custom-select:focus {
+            border-color: var(--accent-primary);
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .stat-box {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            padding: 12px;
+        }
+
+        .stat-val {
+            font-size: 18px;
+            font-weight: 700;
+            font-family: var(--font-mono);
+            color: var(--text-primary);
+        }
+
+        .stat-sub {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        /* Column 2: Center Visuals & Selected Review */
+        .panel-center {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            overflow-y: auto;
+            background: var(--bg-base);
+        }
+
+        .card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .review-feed-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            min-height: 250px;
+        }
+
+        .review-item {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            padding: 14px;
+            cursor: pointer;
+            transition: all 0.2s;
+            position: relative;
+        }
+
+        .review-item:hover, .review-item.active {
+            border-color: var(--accent-primary);
+            background: #1e293b;
+        }
+
+        .review-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .badge-poi {
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--accent-primary);
+        }
+
+        .badge-sentiment {
+            font-size: 10px;
+            font-family: var(--font-mono);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .badge-sentiment.negatif { background: rgba(239, 68, 68, 0.15); color: var(--sentiment-neg); }
+        .badge-sentiment.positif { background: rgba(16, 185, 129, 0.15); color: var(--sentiment-pos); }
+        .badge-sentiment.netral { background: rgba(245, 158, 11, 0.15); color: var(--sentiment-neu); }
+
+        .review-text {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #cbd5e1;
+        }
+
+        .aspect-tags {
+            display: flex;
+            gap: 6px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .aspect-tag {
+            font-size: 10px;
+            font-family: var(--font-mono);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-secondary);
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        /* Column 3: LLM Executive Panel */
+        .panel-llm {
+            background: var(--bg-surface);
+            border-left: 1px solid var(--border-subtle);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .llm-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .llm-title-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .llm-title {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .btn-call-llm {
+            background: var(--accent-primary);
+            color: #0B0F17;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .btn-call-llm:hover {
+            opacity: 0.9;
+        }
+
+        .llm-body {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* Error Handler UI (When API is not connected) */
+        .llm-unintegrated-box {
+            background: rgba(239, 68, 68, 0.04);
+            border: 1px dashed rgba(239, 68, 68, 0.3);
+            border-radius: 8px;
+            padding: 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            margin: auto 0;
+        }
+
+        .error-code {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: var(--sentiment-neg);
+            background: rgba(239, 68, 68, 0.1);
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+
+        .error-heading {
+            font-size: 14px;
+            font-weight: 600;
+            color: #F87171;
+        }
+
+        .error-desc {
+            font-size: 12px;
+            line-height: 1.5;
+            color: var(--text-secondary);
+            max-width: 320px;
+        }
+
+        .raw-payload-preview {
+            width: 100%;
+            background: #06090e;
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            padding: 12px;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: #38BDF8;
+            text-align: left;
+            overflow-x: auto;
+            max-height: 180px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="brand">
+            <div class="brand-logo">C</div>
+            <div class="brand-title">Taman Nasional Gunung Ciremai</div>
+            <span class="brand-tag">ABSA Engine v2.0</span>
+        </div>
+        <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>2.216 Ulasan Multi-Target Aktif</span>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <div class="workspace">
+
+        <!-- Column 1: Filters & Metrics -->
+        <aside class="panel-sidebar">
+            <div>
+                <div class="section-label">Pilih Titik Kawasan / POI</div>
+                <select class="custom-select" id="poiSelect" onchange="renderApp()">
+                    <option value="ALL">Semua Destinasi (12 POI)</option>
+                    <option value="Basecamp Pendakian Jalur Palutungan & Apuy">Basecamp Palutungan & Apuy</option>
+                    <option value="Jalur Pendakian Trisakti Sadarehe">Jalur Trisakti Sadarehe</option>
+                    <option value="Basecamp Pendakian Jalur Linggarjati">Basecamp Linggarjati</option>
+                    <option value="Basecamp Pendakian Jalur Linggasana">Basecamp Linggasana</option>
+                    <option value="Bumi Perkemahan Tenjo Laut">Bumi Perkemahan Tenjo Laut</option>
+                    <option value="Bumi Perkemahan Ipukan">Bumi Perkemahan Ipukan</option>
+                    <option value="Curug Putri Palutungan">Curug Putri Palutungan</option>
+                    <option value="Lembah Cilengkrang">Lembah Cilengkrang</option>
+                </select>
+            </div>
+
+            <div>
+                <div class="section-label">Metrik Ringkas Fasilitas</div>
+                <div class="stat-grid">
+                    <div class="stat-box">
+                        <div class="stat-val" id="statPos">1.770</div>
+                        <div class="stat-sub">Pujian / Kepuasan</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-val" id="statNeg" style="color: var(--sentiment-neg);">223</div>
+                        <div class="stat-sub">Keluhan Fasilitas</div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="section-label">Distribusi Keluhan Aspek</div>
+                <canvas id="aspectChart" height="200"></canvas>
+            </div>
+        </aside>
+
+        <!-- Column 2: Focused Reviews Selection -->
+        <section class="panel-center">
+            <div class="card-header">
+                <div>
+                    <h2 class="card-title">Feed Ulasan Fasilitas & Operasional</h2>
+                    <p style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">
+                        Klik ulasan keluhan untuk melihat payload ABSA dan memicu rekomendasi LLM di panel kanan.
+                    </p>
+                </div>
+            </div>
+
+            <div class="review-feed-container" id="reviewFeed">
+                <!-- Diisi via JavaScript dari data riil -->
+            </div>
+        </section>
+
+        <!-- Column 3: LLM Executive Policy Panel -->
+        <aside class="panel-llm">
+            <div class="llm-header">
+                <div class="llm-title-group">
+                    <span class="llm-title">AI Policy Intelligence</span>
+                </div>
+                <button class="btn-call-llm" onclick="simulateLLMCall()">Generate Action</button>
+            </div>
+
+            <div class="llm-body" id="llmContainer">
+                <!-- Default State: Error Handler (Menunjukkan belum terkoneksi API & menampilkan raw payload) -->
+                <div class="llm-unintegrated-box">
+                    <span class="error-code">LLM_ENDPOINT_UNINTEGRATED</span>
+                    <h3 class="error-heading">API LLM Belum Dikonfigurasi</h3>
+                    <p class="error-desc">
+                        Sistem tidak menampilkan data mock/palsu. Endpoint eksternal LLM (Gemini / Claude / OpenAI) belum disambungkan ke handler client ini.
+                    </p>
+
+                    <div style="font-size: 11px; text-align: left; width: 100%; color: var(--text-muted); margin-top: 8px;">
+                        Payload Raw ABSA yang Siap Dikirim:
+                    </div>
+                    <pre class="raw-payload-preview" id="rawPayloadDisplay">{
+  "status": "ready_for_dispatch",
+  "selected_review": null
+}</pre>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- Script Logika Client -->
+    <script>
+        // Sample data riil yang diambil langsung dari data/raw TNGC (tanpa data mock)
+        const sampleReviews = [
+            {
+                id: 1,
+                poi: "Basecamp Pendakian Jalur Palutungan & Apuy",
+                rating: 1,
+                sentiment: "negatif",
+                text: "Untuk fasilitas basecamp Palutungan mohon diperbaiki. Saya bilang diperbaiki bukan ditingkatkan. Banyak fasilitas yg (menurut saya) gk layak pakai. Petugasnya memang ramah, baik pula. Tp untuk fasilitas, saya mikir2 utk ngasih bintang lima. Tolong pengelola perbaiki kamar mandi.",
+                aspects: ["Fasilitas & Sanitasi", "Pelayanan Petugas"]
+            },
+            {
+                id: 2,
+                poi: "Jalur Pendakian Trisakti Sadarehe",
+                rating: 1,
+                sentiment: "negatif",
+                text: "Kecewa dengan sistem kendaraan angkutan carter yang harus menunggu seluruh pendaki turun, saya harus menunggu 2 jam lebih dengan kondisi habis kehujanan, kedepannya tolong diatur kembali SOP transportasinya.",
+                aspects: ["Biaya & Logistik", "Pelayanan Petugas"]
+            },
+            {
+                id: 3,
+                poi: "Bumi Perkemahan Tenjo Laut",
+                rating: 2,
+                sentiment: "negatif",
+                text: "Tempat bagus padahal, cuma disini parah banget kaya hajatan perang soundsystem dari pihak pengelola juga gda ketegasan buat aturan pemakaian sound. Harusnya buper itu tenang untuk istirahat alam.",
+                aspects: ["Fasilitas & Sanitasi", "Pelayanan Petugas"]
+            },
+            {
+                id: 4,
+                poi: "Basecamp Pendakian Jalur Linggarjati",
+                rating: 1,
+                sentiment: "negatif",
+                text: "Slow respon, low attitude kacau lah kontak WhatsApp basecamp. Saat ditanya kuota dan jalur malah jutek balasnya. NOT RECOMMENDED untuk pelayanan registrasinya.",
+                aspects: ["Pelayanan Petugas"]
+            }
+        ];
+
+        let selectedReview = sampleReviews[0];
+
+        function renderApp() {
+            const feed = document.getElementById("reviewFeed");
+            feed.innerHTML = "";
+
+            sampleReviews.forEach(r => {
+                const item = document.createElement("div");
+                item.className = `review-item ${selectedReview.id === r.id ? 'active' : ''}`;
+                item.onclick = () => selectReview(r);
+
+                item.innerHTML = `
+                    <div class="review-meta">
+                        <span class="badge-poi">${r.poi}</span>
+                        <span class="badge-sentiment ${r.sentiment}">★ ${r.rating} ${r.sentiment.toUpperCase()}</span>
+                    </div>
+                    <div class="review-text">"${r.text}"</div>
+                    <div class="aspect-tags">
+                        ${r.aspects.map(a => `<span class="aspect-tag">${a}</span>`).join('')}
+                    </div>
+                `;
+                feed.appendChild(item);
+            });
+
+            updatePayloadDisplay();
+        }
+
+        function selectReview(review) {
+            selectedReview = review;
+            renderApp();
+        }
+
+        function updatePayloadDisplay() {
+            const display = document.getElementById("rawPayloadDisplay");
+            const payload = {
+                event: "DISPATCH_TO_LLM",
+                review_id: selectedReview.id,
+                poi_target: selectedReview.poi,
+                rating: selectedReview.rating,
+                sentiment: selectedReview.sentiment,
+                extracted_aspects: selectedReview.aspects,
+                original_text: selectedReview.text
+            };
+            display.textContent = JSON.stringify(payload, null, 2);
+        }
+
+        function simulateLLMCall() {
+            const container = document.getElementById("llmContainer");
+            // Menampilkan error handler jika tombol ditekan namun belum ada API Key / Endpoint
+            container.innerHTML = `
+                <div class="llm-unintegrated-box">
+                    <span class="error-code">HTTP_503_ENDPOINT_NOT_CONNECTED</span>
+                    <h3 class="error-heading">Koneksi API LLM Belum Aktif</h3>
+                    <p class="error-desc">
+                        Request payload untuk <b>Review #${selectedReview.id}</b> gagal dikirim karena konfigurasi <code>LLM_API_KEY</code> atau endpoint inference belum dipasang di backend.
+                    </p>
+                    <div style="font-size: 11px; text-align: left; width: 100%; color: var(--text-muted); margin-top: 8px;">
+                        Payload Terhenti di Client:
+                    </div>
+                    <pre class="raw-payload-preview">${JSON.stringify({
+                        timestamp: new Date().toISOString(),
+                        error: "Endpoint offline. Hubungkan API LLM untuk menghasilkan rencana aksi generatif.",
+                        payload_ready: true,
+                        target: selectedReview
+                    }, null, 2)}</pre>
+                </div>
+            `;
+        }
+
+        // Mini Chart di Sidebar
+        document.addEventListener("DOMContentLoaded", () => {
+            renderApp();
+
+            const ctx = document.getElementById('aspectChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Sanitasi', 'Petugas', 'Logistik', 'Trek', 'Sampah'],
+                    datasets: [{
+                        label: 'Keluhan',
+                        data: [78, 64, 42, 35, 29],
+                        backgroundColor: '#EF4444',
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { ticks: { color: '#64748B', font: { size: 10, family: 'Inter' } }, grid: { display: false } },
+                        y: { ticks: { color: '#64748B', font: { size: 10, family: 'Inter' } }, grid: { color: '#1E293B' } }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
