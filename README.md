@@ -1,43 +1,66 @@
-# Aspect-Based Sentiment Analysis (ABSA) & Multi-Target TNGC
+# Aspect-Based Sentiment Analysis (ABSA) - Taman Nasional Gunung Ciremai (TNGC)
 
-Proyek Analisis Sentimen Berbasis Aspek (ABSA) ulasan pengunjung Taman Nasional Gunung Ciremai (TNGC) dari 12 titik basecamp dan Objek Daya Tarik Wisata Alam (ODTWA) resmi Balai TNGC di Google Maps.
-
----
-
-## 🎯 Komponen & Struktur Proyek (Handoff Structure)
-
-| File / Folder | Fungsi & Deskripsi |
-| :--- | :--- |
-| **`tngc_absa_analysis.ipynb`** | Notebook riset utama: Ingesti 2.216 data, audit cleaning, Word Cloud, TF-IDF + SMOTE, evaluasi 3 model klasik + Fine-Tuning IndoBERT (GPU CUDA), dan ekspor raw JSON. |
-| **`app_dashboard.py`** | Aplikasi Dashboard analitik Streamlit formal (6 tab analitik interaktif, Plotly charts, peta teks leksikal, dan payload LLM). |
-| **`pure_absa.py`** | Modul generator payload murni ABSA tanpa hardcode rekomendasi (siap di-feed ke API LLM). |
-| **`indobert_trainer.py`** | Modul deep learning fine-tuning `indobenchmark/indobert-base-p1` terakselerasi NVIDIA RTX GPU. |
-| **`tngc_analytics_core.py`** | Modul logika data preprocessing, filter eliminasi estetika alam, dan training model klasik. |
-| **`lexicon_loader.py`** | Integrasi kamus resmi GitHub (*Colloquial Indonesian Lexicon* UI) + InSet + istilah lokal Ciremai/Sunda. |
-| **`fe/`** | Folder antarmuka web statis (HTML/JS/CSS dashboard visualisasi TNGC dari repositori frontend). |
-| **`docs/`** | Dokumentasi lengkap SDLC: PRD, SRS, ADR, Execution Plan, dan Dev Log. |
-| **`tngc_official_multitarget_reviews.csv`** | Dataset mentah 2.216 ulasan terverifikasi dari 12 titik resmi TNGC. |
-| **`tngc_pure_absa_payloads.json`** | Dataset terproses format JSON murni ABSA untuk integrasi API LLM. |
+Repositori riset Analisis Sentimen Berbasis Aspek (ABSA) ulasan pengunjung Taman Nasional Gunung Ciremai (TNGC) dari 12 titik basecamp dan Objek Daya Tarik Wisata Alam (ODTWA) resmi Balai TNGC di Google Maps.
 
 ---
 
-## 🚀 Cara Menjalankan
+## 📁 Struktur Folder Proyek (Modular Architecture)
 
-### 1. Dashboard Streamlit
-```bash
-/c/Users/seeva/.venvs/nlp-env/Scripts/python -m streamlit run app_dashboard.py
+```text
+analysis-TNGC/
+├── core/                        # Modul Python logika utama & model training
+│   ├── indobert_trainer.py      # Fine-tuning IndoBERT (PyTorch CUDA GPU)
+│   ├── lexicon_loader.py        # Normalisasi teks kamus GitHub + Sunda/TNGC
+│   ├── pure_absa.py             # Generator payload murni ABSA (siap ke API LLM)
+│   ├── tngc_analytics_core.py   # Filtering fasilitas & pipeline benchmark ML
+│   └── kamus_slang_tngc.py      # Entri istilah lokal & dialek pendakian
+│
+├── dashboard/                   # Dashboard interaktif analitik Streamlit
+│   └── app_dashboard.py         # 6 tab visualisasi formal (Plotly + Word Cloud)
+│
+├── data/                        # Penyimpanan data terstruktur
+│   ├── raw/                     # tngc_official_multitarget_reviews.csv (2.216 ulasan)
+│   ├── processed/               # tngc_pure_absa_payloads.json & dataset berlabel
+│   └── lexicon/                 # colloquial-indonesian-lexicon.csv, inset_*.tsv
+│
+├── ml-notebooks/                # Eksperimen ilmiah & visualisasi akademik
+│   └── tngc_absa_analysis.ipynb # Notebook lengkap (Audit, SMOTE, ML, IndoBERT, JSON)
+│
+├── scraper/                     # Script pengumpulan data ulasan Google Maps
+│   ├── scrape_tngc_multitarget.mjs  # Scraper multi-target internal endpoint
+│   └── tngc_resolved_pois.json  # Metadata 12 verified POI hex placeId
+│
+├── fe/                          # Antarmuka web statis dashboard
+│   ├── assets/                  # CSS & JS Chart.js
+│   ├── data/                    # Salinan dataset & payload untuk frontend
+│   └── index.html               # Entry point visualisasi web
+│
+└── docs/                        # Dokumentasi enterprise SDLC lengkap
+    ├── prd/                     # Product Requirement Document
+    ├── srs/                     # Software Requirement Specification
+    ├── adr/                     # Architectural Decision Records
+    ├── plans/                   # Execution Plan
+    └── devlogs/                 # Catatan perkembangan harian (Dev Log)
 ```
 
-### 2. Jupyter Notebook
-Buka `tngc_absa_analysis.ipynb` di VS Code / Jupyter Lab, pastikan kernel aktif di `nlp-env`, lalu jalankan **Run All**.
+---
 
-### 3. Frontend Web (`fe/`)
-Cukup buka file `fe/index.html` langsung di browser atau gunakan extension Live Server.
+## 🚀 Panduan Eksekusi
+
+### 1. Menjalankan Dashboard Streamlit
+```bash
+/c/Users/seeva/.venvs/nlp-env/Scripts/python -m streamlit run dashboard/app_dashboard.py
+```
+
+### 2. Menjalankan Notebook Riset
+Buka `ml-notebooks/tngc_absa_analysis.ipynb` di VS Code / Jupyter Lab dengan kernel `nlp-env`, lalu jalankan **Run All**.
+
+### 3. Membuka Web Frontend Statis (`fe/`)
+Cukup buka `fe/index.html` langsung di browser atau via Live Server.
 
 ---
 
-## 🔗 Remote Repository
-Target upstream:
+## 🔗 Target Remote Git
 ```text
 https://github.com/timbubadibako/SA-TNGC.git
 ```

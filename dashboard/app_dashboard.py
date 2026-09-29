@@ -7,6 +7,17 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
+import os
+import sys
+
+# Tambahkan root directory ke sys.path
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
+CORE_DIR = os.path.join(ROOT_DIR, "core")
+if CORE_DIR not in sys.path:
+    sys.path.insert(0, CORE_DIR)
+
 from tngc_analytics_core import (
     filter_facility_reviews, 
     preprocess_corpus, 
@@ -58,7 +69,8 @@ st.markdown("""
 # 1. Data Loader
 @st.cache_data
 def load_and_preprocess_data():
-    raw_df = pd.read_csv("tngc_official_multitarget_reviews.csv")
+    data_path = os.path.join(ROOT_DIR, "data", "raw", "tngc_official_multitarget_reviews.csv")
+    raw_df = pd.read_csv(data_path)
     df_facility, df_nature = filter_facility_reviews(raw_df)
     df_proc = preprocess_corpus(df_facility)
     return raw_df, df_proc, df_nature

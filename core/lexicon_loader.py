@@ -10,7 +10,8 @@ import re
 import pandas as pd
 from typing import Dict
 
-LEXICON_FILE = "colloquial-indonesian-lexicon.csv"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+LEXICON_FILE = os.path.join(BASE_DIR, "data", "lexicon", "colloquial-indonesian-lexicon.csv")
 
 # Domain-specific Ciremai & hiking terms yang melengkapi kamus umum
 TNGC_DOMAIN_TERMS = {
