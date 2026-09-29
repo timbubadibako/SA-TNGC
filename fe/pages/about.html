@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Project — Sentiment Arena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body style="height: auto; overflow: auto;">
+
+    <header>
+        <div class="logo">
+            <span style="font-family: serif; font-style: italic; font-size: 1.8rem;">Sentiment</span>
+            <span style="font-family: var(--font-mono); font-size: 1.2rem;">Arena</span>
+            <span style="font-size: 0.7rem; vertical-align: top;">by TNGC.ID</span>
+        </div>
+        <nav class="nav-links">
+            <a href="../index.html" style="color: var(--border-light);">LIVE</a>
+            <a href="blog.html" style="color: var(--border-light);">BLOG</a>
+        </nav>
+        <a href="about.html" class="nav-right" style="color: var(--text-main);">ABOUT PROJECT &#8599;</a>
+    </header>
+
+    <div class="about-container">
+        <div class="about-header">
+            <h1 class="about-title">About This Project</h1>
+            <p style="font-size: 0.9rem; color: #666;">Sentiment Analysis System for Mount Ciremai National Park</p>
+        </div>
+
+        <section class="about-section">
+            <h2>Sejarah Proyek</h2>
+            <p>
+                Proyek <strong>Sentiment Arena</strong> merupakan bagian dari penelitian skripsi yang bertujuan
+                menganalisis persepsi dan kepuasan pengunjung Taman Nasional Gunung Ciremai (TNGC) melalui ulasan di
+                platform Google Maps. Penelitian ini dimulai pada bulan Mei 2024 dengan pengumpulan data selama 6 bulan
+                terakhir.
+            </p>
+            <p>
+                Dengan total 36.441 ulasan yang berhasil dikumpulkan, proyek ini menjadi salah satu studi kasus
+                sentiment analysis terbesar untuk destinasi wisata alam di Indonesia. Data yang terkumpul mencakup
+                periode Oktober 2024 hingga Maret 2025, memberikan gambaran komprehensif tentang pengalaman pengunjung.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Metode Analisis</h2>
+            <p>
+                Penelitian ini menggunakan pendekatan <strong>Machine Learning</strong> dengan algoritma <strong>Support
+                    Vector Machine (SVM)</strong> untuk mengklasifikasikan sentimen ulasan menjadi tiga kategori:
+                positif, negatif, dan netral.
+            </p>
+            <p>Tahapan preprocessing yang dilakukan meliputi:</p>
+            <ul>
+                <li><strong>Text Cleaning:</strong> Menghilangkan karakter khusus, emoji, dan noise data</li>
+                <li><strong>Case Folding:</strong> Mengubah semua teks menjadi huruf kecil untuk konsistensi</li>
+                <li><strong>Normalization:</strong> Menormalisasi kata-kata tidak baku menjadi bentuk baku</li>
+                <li><strong>Stopwords Removal:</strong> Menghapus kata-kata umum yang tidak bermakna</li>
+                <li><strong>Stemming:</strong> Mengubah kata berimbuhan menjadi kata dasar</li>
+                <li><strong>TF-IDF Weighting:</strong> Pembobotan kata berdasarkan frekuensi dan kepentingan</li>
+            </ul>
+            <p>
+                Model SVM yang digunakan mencapai akurasi <strong>92.4%</strong> setelah melalui proses hyperparameter
+                tuning dan cross-validation. Performa ini menunjukkan bahwa model mampu mengklasifikasikan sentimen
+                dengan tingkat akurasi yang sangat baik.
+            </p>
+        </section>
+
+        <section class="about-section">
+            <h2>Mengapa TNGC?</h2>
+            <p>
+                Taman Nasional Gunung Ciremai dipilih sebagai objek penelitian karena beberapa alasan strategis:
+            </p>
+            <ul>
+                <li>Merupakan salah satu destinasi wisata alam populer di Jawa Barat</li>
+                <li>Memiliki volume ulasan Google Maps yang besar dan representatif</li>
+                <li>Beragam fasilitas dan layanan yang dapat dievaluasi secara komprehensif</li>
+                <li>Potensi peningkatan kualitas layanan berdasarkan feedback pengunjung</li>
+                <li>Relevansi dengan pengembangan pariwisata berkelanjutan di Indonesia</li>
+            </ul>
+        </section>
+
+        <section class="about-section">
+            <h2>Tujuan Penelitian</h2>
+            <p>Penelitian ini memiliki beberapa tujuan utama:</p>
+            <ul>
+                <li>Mengidentifikasi persepsi dan kepuasan pengunjung terhadap TNGC</li>
+                <li>Menganalisis tren sentimen dalam periode waktu tertentu</li>
+                <li>Menemukan aspek-aspek yang paling disukai dan dikritik pengunjung</li>
+                <li>Memberikan rekomendasi berbasis data untuk peningkatan layanan</li>
+                <li>Memvalidasi efektivitas algoritma SVM untuk sentiment analysis bahasa Indonesia</li>
+            </ul>
+        </section>
+
+        <section class="about-section">
+            <h2>Hasil & Insight Utama</h2>
+            <p>Dari analisis 36.441 ulasan, diperoleh hasil sebagai berikut:</p>
+            <ul>
+                <li><strong>64.2% sentimen positif</strong> — Mayoritas pengunjung puas dengan pengalaman mereka</li>
+                <li><strong>13.5% sentimen negatif</strong> — Area yang memerlukan perbaikan segera</li>
+                <li><strong>22.3% sentimen netral</strong> — Pengunjung dengan pengalaman standar</li>
+            </ul>
+            <p>
+                <strong>Insight penting:</strong> Aspek yang paling dipuji adalah keindahan pemandangan alam dan
+                kesejukan udara, sementara keluhan utama berkaitan dengan fasilitas toilet, pengelolaan sampah, dan
+                aksesibilitas jalur pendakian. Data menunjukkan tren peningkatan sentimen positif dalam 3 bulan
+                terakhir, mengindikasikan adanya perbaikan layanan yang telah dilakukan pengelola.
+            </p>
+            <p>
+                Visualisasi real-time dalam platform ini memungkinkan stakeholder untuk memantau fluktuasi sentimen dan
+                segera merespons perubahan persepsi pengunjung. Sistem ini dirancang untuk menjadi tool monitoring
+                jangka panjang yang dapat membantu pengambilan keputusan berbasis data.
+            </p>
+        </section>
+
+        <div style="text-align: center; margin-top: 50px; padding: 30px; border: 2px solid #000; background: #f9f9f9;">
+            <p style="font-size: 0.85rem; margin-bottom: 15px;">Untuk informasi lebih lanjut atau kolaborasi penelitian:
+            </p>
+            <p style="font-size: 0.9rem; font-weight: 700;">hariinakahermawan@gmail.com</p>
+        </div>
+    </div>
+
+    <footer>
+        <div>&copy; 2025 Sentiment Arena — Mount Ciremai National Park</div>
+        <div>Created with Support Vector Machine (SVM)</div>
+    </footer>
+
+</body>
+
+</html>

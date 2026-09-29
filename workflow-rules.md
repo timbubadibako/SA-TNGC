@@ -1,22 +1,24 @@
 # Workflow Rules & Research Guidelines
-## Project: Strava Sentiment Analysis
+## Project: ABSA Taman Nasional Gunung Ciremai (TNGC)
 
-Setiap script dan analisis data di direktori ini **WAJIB MENGIKUTI STANDAR ILMIAH BERIKUT**:
-
----
+Pedoman standar riset & pengolahan data ABSA TNGC:
 
 ## 1. Reproducibility & Random Seed
-- Selalu gunakan `random_state=42` pada setiap split data (`train_test_split`) dan inisialisasi model (SVM, Random Forest, Logistic Regression).
-- Simpan rasio pembagian data standar: **80% Training Data, 20% Testing Data** (atau Stratified K-Fold Cross Validation $k=5$).
+- Gunakan `random_state=42` pada pembagian data (`train_test_split`) dan inisialisasi model ML (SVM, Logistic Regression, dll.).
+- Rasio standar: **80% Training Data, 20% Testing Data** (atau Stratified K-Fold $k=5$).
 
 ## 2. Pencegahan Data Leakage
 - Fitur TF-IDF Vectorizer wajib di-`fit` HANYA pada data Training (`fit_transform`), dan di-`transform` pada data Testing.
-- Dilarang keras melakukan preprocessing/resampling (seperti SMOTE) sebelum data dibagi menjadi Train-Test.
+- Preprocessing & augmentasi/resampling hanya dilakukan pada data latih.
 
 ## 3. Metrik Evaluasi Komprehensif
-- Jangan hanya melaporkan *Accuracy* (karena sentimen ulasan sering *imbalanced*).
-- Laporkan secara lengkap: **Macro Precision, Macro Recall, Macro F1-Score**, dan tabel **Confusion Matrix**.
+- Laporkan evaluasi per-aspek dan multi-label: **Macro Precision, Macro Recall, Macro F1-Score**, serta Confusion Matrix / Classification Report.
 
-## 4. Keamanan & Sanitasi Data
-- Jangan simpan data sensitif pengguna (seperti nomor telepon jika ada di ulasan).
-- Kolom `userName` wajib di-anonimkan saat naskah dipublikasikan ke jurnal.
+## 4. Rekomendasi Solusi Berjenjang
+- Setiap sentimen negatif per aspek wajib dipetakan ke rencana aksi:
+  - **Jangka Pendek** (0 - 3 bulan)
+  - **Jangka Menengah** (3 - 12 bulan)
+  - **Jangka Panjang** (> 1 tahun)
+
+## 5. Keamanan Data
+- Anonimkan identitas reviewer (nama reviewer di-masking saat publikasi).

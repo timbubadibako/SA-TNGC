@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Basecamp Pendakian Jalur Palutungan",
+    "category": "Jalur Pendakian & Basecamp",
+    "place_id": "0x2e6f3cdceebd1f5d:0x11b16d616a8ca38c"
+  },
+  {
+    "name": "Basecamp Pendakian Jalur Linggarjati",
+    "category": "Jalur Pendakian & Basecamp",
+    "place_id": "0x2e6f18316645f6bd:0x9d198da42fa0a3a0"
+  },
+  {
+    "name": "Basecamp Pendakian Jalur Linggasana",
+    "category": "Jalur Pendakian & Basecamp",
+    "place_id": "0x2e6f182f7c4d7109:0x9fa683ee63b9daaa"
+  },
+  {
+    "name": "Jalur Pendakian Sadarehe",
+    "category": "Jalur Pendakian & Basecamp",
+    "place_id": "0x2e6f238aeebc3e61:0xf7cddc52ad2d5908"
+  },
+  {
+    "name": "Lembah Cilengkrang",
+    "category": "Wisata Alam & Pemandian TNGC",
+    "place_id": "0x2e6f17d297b6da1d:0xf46ec450342a4929"
+  },
+  {
+    "name": "Bumi Perkemahan Tenjo Laut",
+    "category": "Bumi Perkemahan TNGC",
+    "place_id": "0x2e6f3d8344727537:0xf1778b00fdeed6a"
+  }
+]

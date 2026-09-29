@@ -1,0 +1,50 @@
+{
+  "positif": [
+    {
+      "id": 1,
+      "tanggal": "2024-11-20",
+      "ulasan": "Pemandangan sangat indah dan jalur pendakian tertata rapi. Pengalaman yang luar biasa!",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "tanggal": "2024-11-19",
+      "ulasan": "Udara segar dan pemandu sangat ramah. Fasilitas camping juga lengkap.",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "tanggal": "2024-11-18",
+      "ulasan": "Spot foto keren banget! Sunrise di puncak benar-benar menakjubkan.",
+      "rating": 5
+    }
+  ],
+  "negatif": [
+    {
+      "id": 1,
+      "tanggal": "2024-11-20",
+      "ulasan": "Jalur pendakian sangat terjal dan tidak ada penanda yang jelas. Cukup berbahaya.",
+      "rating": 2
+    },
+    {
+      "id": 2,
+      "tanggal": "2024-11-19",
+      "ulasan": "Area parkir sempit dan biaya masuk terlalu mahal untuk fasilitas yang minim.",
+      "rating": 2
+    }
+  ],
+  "netral": [
+    {
+      "id": 1,
+      "tanggal": "2024-11-20",
+      "ulasan": "Tempat standar untuk pendakian. Tidak ada yang istimewa tapi juga tidak buruk.",
+      "rating": 3
+    },
+    {
+      "id": 2,
+      "tanggal": "2024-11-19",
+      "ulasan": "Lokasi strategis dan mudah diakses dari Cirebon.",
+      "rating": 3
+    }
+  ]
+}

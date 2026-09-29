@@ -5,15 +5,18 @@ __pycache__/
 .venv/
 env/
 venv/
+nlp/
 
-# Model Checkpoints & Large Weights (Keep repo clean)
+# Model Checkpoints & Large Weights
 results_indobert/
 models/
 *.safetensors
 *.bin
 
-# Datasets
-*.csv
+# Node Modules & Tooling
+node_modules/
+.codegraph/
+.rtk/
 
 # OS & Temp
 .DS_Store

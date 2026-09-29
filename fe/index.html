@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Arena — TNGC | SVM Analysis</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <span style="font-family: serif; font-style: italic; font-size: 1.8rem;">Sentiment</span>
+            <span style="font-family: var(--font-mono); font-size: 1.2rem;">Arena</span>
+            <span style="font-size: 0.7rem; vertical-align: top;">by TNGC.ID</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" style="color: var(--text-main);">LIVE</a>
+            <a href="pages/blog.html" style="color: var(--border-light);">BLOG</a>
+        </nav>
+        <a href="pages/about.html" class="nav-right">ABOUT PROJECT &#8599;</a>
+    </header>
+
+    <div class="sentiment-ticker">
+        <div class="ticker-item" onclick="window.location.href='pages/positif.html'">
+            <div class="ticker-label"><span class="dot" style="background: var(--color-pos);"></span> POSITIF</div>
+            <div class="ticker-value" style="color: var(--color-pos);">1.770</div>
+        </div>
+        <div class="ticker-item" onclick="window.location.href='pages/negatif.html'">
+            <div class="ticker-label"><span class="dot" style="background: var(--color-neg);"></span> NEGATIF</div>
+            <div class="ticker-value" style="color: var(--color-neg);">223</div>
+        </div>
+        <div class="ticker-item" onclick="window.location.href='pages/netral.html'">
+            <div class="ticker-label"><span class="dot" style="background: var(--color-neu);"></span> NETRAL</div>
+            <div class="ticker-value" style="color: var(--color-neu);">223</div>
+        </div>
+        <div class="ticker-item" style="border-right: none;">
+            <div class="ticker-label">TOTAL DATASET</div>
+            <div class="ticker-value">2.216</div>
+        </div>
+    </div>
+
+    <div class="main-layout">
+
+        <main class="chart-section">
+            <div class="chart-header">
+                <div>
+                    <div style="font-size: 0.7rem; color: #888; margin-bottom: 2px;">SVM ALGORITHM VISUALIZATION</div>
+                    <h2 class="chart-title">Trend Sentiment Analysis — TNGC</h2>
+                </div>
+                <div class="chart-controls">
+                    <select id="rangeSelector">
+                        <option value="1D">1D</option>
+                        <option value="1W">1W</option>
+                        <option value="ALL" selected>ALL</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="canvas-wrapper">
+                <canvas id="sentimentChart"></canvas>
+            </div>
+
+            <div class="watermark">TNGC.ID</div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-header">UPDATE PENELITIAN</div>
+
+            <div class="stat-box">
+                <div style="font-size: 0.9rem; color: #666;">MODEL ACCURACY</div>
+                <div class="stat-val">92.4%</div>
+            </div>
+
+            <div class="desc-text">
+                <p>
+                    <strong>Analisis sentimen</strong> ini mengklasifikasikan ulasan Google Maps Taman Nasional Gunung
+                    Ciremai menggunakan algoritma <em>Support Vector Machine (SVM)</em>.
+                </p>
+                <p>
+                    Proses preprocessing meliputi: <em>cleaning, case folding, normalization, stopwords removal,
+                        stemming,</em> dan pembobotan <em>TF-IDF</em>.
+                </p>
+                <p>
+                    Grafik di sebelah kiri menampilkan tren fluktuasi sentimen pengunjung selama 6 bulan terakhir. Data
+                    ini krusial untuk strategi peningkatan layanan.
+                </p>
+            </div>
+
+            <div class="btn-download">
+                Download Laporan Skripsi
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <div>&copy; 2025 Sentiment Arena — Mount Ciremai National Park</div>
+        <div>Created with Support Vector Machine (SVM)</div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
