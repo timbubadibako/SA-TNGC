@@ -201,60 +201,232 @@ header {
 /* --- BAGIAN KANAN: SIDEBAR --- */
 .sidebar {
     flex: 3;
-    padding: 25px;
+    padding: 20px;
     background: #fff;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    gap: 15px;
 }
 
 .sidebar-header {
     text-align: right;
     border-bottom: 2px solid #000;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 0.8rem;
-    font-weight: 700;
-}
-
-.stat-box {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.stat-val {
-    font-size: 2.5rem;
-    font-weight: 700;
-    line-height: 1;
-    margin-top: 5px;
-    display: inline-block;
-    border-bottom: 3px solid #000;
-}
-
-.desc-text {
+    padding-bottom: 8px;
     font-size: 0.75rem;
-    line-height: 1.6;
-    text-align: justify;
-    color: #333;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+/* Compact Model Meta Bar */
+.model-meta-compact {
+    display: flex;
+    justify-content: space-between;
+    background: #f4f4f4;
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.meta-label {
+    font-size: 0.6rem;
+    color: #666;
+    font-weight: 700;
+}
+
+.meta-val {
+    font-size: 0.85rem;
+    font-weight: 700;
+    font-family: var(--font-mono);
+}
+
+/* Recommendation Tabs */
+.recom-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.recom-tab-btn {
+    flex: 1;
+    background: #f9f9f9;
+    border: 1px solid var(--border-light);
+    border-bottom: none;
+    padding: 8px 4px;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: #888;
+    transition: all 0.2s;
+}
+
+.recom-tab-btn.active {
+    background: #fff;
+    color: #000;
+    border-color: #000;
+    border-bottom: 2px solid #fff;
+    margin-bottom: -1px;
+}
+
+.recom-body-wrapper {
     flex-grow: 1;
 }
 
-.desc-text p {
-    margin-bottom: 15px;
+.recom-tab-content {
+    display: none;
 }
+
+.recom-tab-content.active {
+    display: block;
+}
+
+/* Unintegrated LLM Box */
+.unintegrated-box {
+    border: 1px dashed #d9534f;
+    background: #fffafa;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.err-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #d9534f;
+    font-size: 0.75rem;
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    background: #e74c3c;
+    border-radius: 50%;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.err-sub {
+    font-size: 0.68rem;
+    line-height: 1.45;
+    color: #555;
+    text-align: justify;
+}
+
+.spec-list {
+    margin-top: 4px;
+    border-top: 1px solid #f0d0d0;
+    padding-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.spec-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.spec-k {
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #999;
+}
+
+.spec-v {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #111;
+}
+
+/* Raw Payload Inspector */
+.payload-inspector-container {
+    border: 1px solid var(--border-color);
+    background: #111;
+    color: #a8ffb2;
+    padding: 10px;
+    font-family: var(--font-mono);
+}
+
+.inspector-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.65rem;
+    font-weight: 700;
+    border-bottom: 1px solid #333;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+}
+
+.json-preview {
+    font-size: 0.62rem;
+    line-height: 1.35;
+    max-height: 90px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+/* Aspect Summary Strip on Left */
+.aspect-summary-strip {
+    display: flex;
+    gap: 10px;
+    border-top: 1px solid var(--border-light);
+    padding-top: 12px;
+    margin-top: 8px;
+    overflow-x: auto;
+}
+
+.strip-item {
+    border: 1px solid var(--border-light);
+    background: #fff;
+    padding: 6px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 1;
+    min-width: 110px;
+}
+
+.strip-title {
+    font-size: 0.62rem;
+    font-weight: 700;
+    color: #555;
+    white-space: nowrap;
+}
+
+.strip-stat {
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.strip-stat.pos { color: var(--color-pos); }
+.strip-stat.neg { color: var(--color-neg); }
 
 .btn-download {
     margin-top: auto;
     background: #000;
     color: #fff;
     text-align: center;
-    padding: 15px;
+    padding: 12px;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     cursor: pointer;
     border: 1px solid #000;
     transition: all 0.2s;
+    font-family: var(--font-mono);
 }
 
 .btn-download:hover {

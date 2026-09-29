@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sentiment Arena — TNGC | SVM Analysis</title>
+    <title>Sentiment Arena — TNGC | ABSA & Decision Intelligence</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,10 +24,10 @@
             <span style="font-size: 0.7rem; vertical-align: top;">by TNGC.ID</span>
         </div>
         <nav class="nav-links">
-            <a href="index.html" style="color: var(--text-main);">LIVE</a>
-            <a href="pages/blog.html" style="color: var(--border-light);">BLOG</a>
+            <a href="index.html" style="color: var(--text-main);">LIVE ABSA</a>
+            <a href="pages/blog.html" style="color: var(--border-light);">METRICS</a>
         </nav>
-        <a href="pages/about.html" class="nav-right">ABOUT PROJECT &#8599;</a>
+        <a href="pages/about.html" class="nav-right">DOCS & API &#8599;</a>
     </header>
 
     <div class="sentiment-ticker">
@@ -44,8 +44,8 @@
             <div class="ticker-value" style="color: var(--color-neu);">223</div>
         </div>
         <div class="ticker-item" style="border-right: none;">
-            <div class="ticker-label">TOTAL DATASET</div>
-            <div class="ticker-value">2.216</div>
+            <div class="ticker-label">ABSA DETECTED</div>
+            <div class="ticker-value">1.752 Aspek</div>
         </div>
     </div>
 
@@ -54,58 +54,144 @@
         <main class="chart-section">
             <div class="chart-header">
                 <div>
-                    <div style="font-size: 0.7rem; color: #888; margin-bottom: 2px;">SVM ALGORITHM VISUALIZATION</div>
-                    <h2 class="chart-title">Trend Sentiment Analysis — TNGC</h2>
+                    <div style="font-size: 0.7rem; color: #888; margin-bottom: 2px;">ASPECT-BASED SENTIMENT ANALYSIS (ABSA) — 5 DOMAINS</div>
+                    <h2 class="chart-title">Distribusi Sentimen per Aspek Fasilitas</h2>
                 </div>
                 <div class="chart-controls">
-                    <select id="rangeSelector">
-                        <option value="1D">1D</option>
-                        <option value="1W">1W</option>
-                        <option value="ALL" selected>ALL</option>
+                    <select id="viewTypeSelector" onchange="toggleChartView(this.value)">
+                        <option value="stacked_bar" selected>BAR POLARITAS</option>
+                        <option value="grouped_bar">BREAKDOWN</option>
                     </select>
                 </div>
             </div>
 
             <div class="canvas-wrapper">
-                <canvas id="sentimentChart"></canvas>
+                <canvas id="absaAspectChart"></canvas>
+            </div>
+
+            <div class="aspect-summary-strip">
+                <div class="strip-item">
+                    <span class="strip-title">FASILITAS SANITASI</span>
+                    <span class="strip-stat pos">458 Pos</span> / <span class="strip-stat neg">35 Neg</span>
+                </div>
+                <div class="strip-item">
+                    <span class="strip-title">BIAYA & LOGISTIK</span>
+                    <span class="strip-stat pos">425 Pos</span> / <span class="strip-stat neg">79 Neg</span>
+                </div>
+                <div class="strip-item">
+                    <span class="strip-title">JALUR & TREK</span>
+                    <span class="strip-stat pos">381 Pos</span> / <span class="strip-stat neg">15 Neg</span>
+                </div>
+                <div class="strip-item">
+                    <span class="strip-title">PELAYANAN PETUGAS</span>
+                    <span class="strip-stat pos">110 Pos</span> / <span class="strip-stat neg">27 Neg</span>
+                </div>
+                <div class="strip-item">
+                    <span class="strip-title">SAMPAH & KEBERSIHAN</span>
+                    <span class="strip-stat pos">77 Pos</span> / <span class="strip-stat neg">20 Neg</span>
+                </div>
             </div>
 
             <div class="watermark">TNGC.ID</div>
         </main>
 
         <aside class="sidebar">
-            <div class="sidebar-header">UPDATE PENELITIAN</div>
+            <div class="sidebar-header">LLM DECISION & RECOMMENDATION</div>
 
-            <div class="stat-box">
-                <div style="font-size: 0.9rem; color: #666;">MODEL ACCURACY</div>
-                <div class="stat-val">92.4%</div>
+            <div class="model-meta-compact">
+                <div class="meta-item">
+                    <span class="meta-label">SVM ACCURACY</span>
+                    <span class="meta-val">87.5%</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">INDOBERT F1</span>
+                    <span class="meta-val">90.2%</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">STATUS</span>
+                    <span class="meta-val" style="color: #e67e22;">OFFLINE</span>
+                </div>
             </div>
 
-            <div class="desc-text">
-                <p>
-                    <strong>Analisis sentimen</strong> ini mengklasifikasikan ulasan Google Maps Taman Nasional Gunung
-                    Ciremai menggunakan algoritma <em>Support Vector Machine (SVM)</em>.
-                </p>
-                <p>
-                    Proses preprocessing meliputi: <em>cleaning, case folding, normalization, stopwords removal,
-                        stemming,</em> dan pembobotan <em>TF-IDF</em>.
-                </p>
-                <p>
-                    Grafik di sebelah kiri menampilkan tren fluktuasi sentimen pengunjung selama 6 bulan terakhir. Data
-                    ini krusial untuk strategi peningkatan layanan.
-                </p>
+            <div class="recom-tabs">
+                <button class="recom-tab-btn active" onclick="switchRecomTab('short')">SHORT-TERM</button>
+                <button class="recom-tab-btn" onclick="switchRecomTab('long')">LONG-TERM</button>
             </div>
 
-            <div class="btn-download">
-                Download Laporan Skripsi
+            <div class="recom-body-wrapper">
+                <!-- SHORT-TERM PREVIEW TAB -->
+                <div id="tab-short" class="recom-tab-content active">
+                    <div class="unintegrated-box">
+                        <div class="err-header">
+                            <span class="status-indicator"></span>
+                            <strong>HTTP 503 · LLM_DISCONNECTED</strong>
+                        </div>
+                        <p class="err-sub">
+                            Endpoint model LLM belum terhubung. Sesuai arsitektur non-mock, rekomendasi operasional jangka pendek akan di-generate otomatis saat API LLM disambungkan.
+                        </p>
+                        <div class="spec-list">
+                            <div class="spec-row">
+                                <span class="spec-k">FOKUS SHORT-TERM</span>
+                                <span class="spec-v">Perbaikan Sanitasi, Kebersihan Jalur & SOP Tiket</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-k">TARGET RESOLUSI</span>
+                                <span class="spec-v">1 - 4 Minggu</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-k">ASPEK RAW</span>
+                                <span class="spec-v">79 Negatif Logistik, 35 Negatif Sanitasi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LONG-TERM PREVIEW TAB -->
+                <div id="tab-long" class="recom-tab-content">
+                    <div class="unintegrated-box">
+                        <div class="err-header">
+                            <span class="status-indicator"></span>
+                            <strong>HTTP 503 · LLM_DISCONNECTED</strong>
+                        </div>
+                        <p class="err-sub">
+                            Endpoint model LLM belum terhubung. Rekomendasi manajerial & kebijakan infrastruktur jangka panjang menunggu respon valid dari reasoning engine.
+                        </p>
+                        <div class="spec-list">
+                            <div class="spec-row">
+                                <span class="spec-k">FOKUS LONG-TERM</span>
+                                <span class="spec-v">Renovasi Shelter, Sertifikasi Ranger & Kuota Pendakian</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-k">TARGET HORIZON</span>
+                                <span class="spec-v">6 - 24 Bulan</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-k">POLICY SOURCE</span>
+                                <span class="spec-v">Balai TNGC & Tata Kelola Pariwisata</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="payload-inspector-container">
+                <div class="inspector-header">
+                    <span>RAW ABSA PAYLOAD (READ-ONLY)</span>
+                    <span style="color: #2ECC71;">READY</span>
+                </div>
+                <pre class="json-preview" id="rawPayloadPreview">/* Menghubungkan ke tngc_pure_absa_payloads.json... */</pre>
+            </div>
+
+            <button class="btn-download" onclick="triggerConnectPrompt()">
+                HUBUNGKAN API LLM &#8599;
+            </button>
         </aside>
 
     </div>
 
     <footer>
-        <div>&copy; 2025 Sentiment Arena — Mount Ciremai National Park</div>
-        <div>Created with Support Vector Machine (SVM)</div>
+        <div>&copy; 2026 Sentiment Arena — Mount Ciremai National Park</div>
+        <div>Aspect-Based Sentiment Analysis &bull; Classical SVM + IndoBERT</div>
     </footer>
 
     <script src="assets/js/main.js"></script>
