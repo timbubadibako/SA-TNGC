@@ -9,8 +9,8 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sentiment Arena — TNGC | ABSA Decision Intelligence",
-  description: "Aspect-Based Sentiment Analysis & LLM Decision Studio for Gunung Ciremai National Park",
+  title: "Aspect-Based Sentiment Analysis & Policy Advisory System — Mount Ciremai National Park",
+  description: "Aspect-Based Sentiment Analysis and Structured Operational Recommendation System for Mount Ciremai National Park (TNGC)",
 };
 
 export default function RootLayout({

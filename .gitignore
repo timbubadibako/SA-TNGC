@@ -23,3 +23,7 @@ node_modules/
 Thumbs.db
 image.png
 .ipynb_checkpoints/
+
+# Environment Variables & Secrets
+.env*
+*.env

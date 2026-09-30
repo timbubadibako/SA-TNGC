@@ -55,8 +55,13 @@ analysis-TNGC/
 ### 2. Menjalankan Notebook Riset
 Buka `ml-notebooks/tngc_absa_analysis.ipynb` di VS Code / Jupyter Lab dengan kernel `nlp-env`, lalu jalankan **Run All**.
 
-### 3. Membuka Web Frontend Statis (`fe/`)
-Cukup buka `fe/index.html` langsung di browser atau via Live Server.
+### 3. Menjalankan Web Dashboard Studio (`fe/`)
+```bash
+cd fe
+npm install
+npm run dev
+```
+Buka `http://localhost:3000` pada peramban web.
 
 ---
 
