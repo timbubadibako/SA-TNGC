@@ -1,0 +1,1963 @@
+{
+  "global_aspects": {
+    "Fasilitas Sanitasi": {
+      "positif": 458,
+      "negatif": 35,
+      "netral": 32
+    },
+    "Biaya & Logistik": {
+      "positif": 425,
+      "negatif": 79,
+      "netral": 46
+    },
+    "Jalur & Trek": {
+      "positif": 381,
+      "negatif": 15,
+      "netral": 32
+    },
+    "Pelayanan Petugas": {
+      "positif": 110,
+      "negatif": 27,
+      "netral": 12
+    },
+    "Sampah & Kebersihan": {
+      "positif": 77,
+      "negatif": 20,
+      "netral": 11
+    }
+  },
+  "poi_aspects": {
+    "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)": {
+      "Fasilitas Sanitasi": {
+        "positif": 16,
+        "negatif": 0,
+        "netral": 1
+      },
+      "Biaya & Logistik": {
+        "positif": 26,
+        "negatif": 0,
+        "netral": 2
+      },
+      "Jalur & Trek": {
+        "positif": 61,
+        "negatif": 1,
+        "netral": 7
+      },
+      "Pelayanan Petugas": {
+        "positif": 21,
+        "negatif": 1,
+        "netral": 2
+      },
+      "Sampah & Kebersihan": {
+        "positif": 15,
+        "negatif": 0,
+        "netral": 2
+      }
+    },
+    "Basecamp Pendakian Jalur Palutungan & Apuy": {
+      "Fasilitas Sanitasi": {
+        "positif": 30,
+        "negatif": 2,
+        "netral": 4
+      },
+      "Biaya & Logistik": {
+        "positif": 43,
+        "negatif": 6,
+        "netral": 5
+      },
+      "Jalur & Trek": {
+        "positif": 52,
+        "negatif": 2,
+        "netral": 2
+      },
+      "Pelayanan Petugas": {
+        "positif": 27,
+        "negatif": 6,
+        "netral": 1
+      },
+      "Sampah & Kebersihan": {
+        "positif": 5,
+        "negatif": 2,
+        "netral": 1
+      }
+    },
+    "Basecamp Pendakian Jalur Linggarjati": {
+      "Fasilitas Sanitasi": {
+        "positif": 3,
+        "negatif": 0,
+        "netral": 0
+      },
+      "Biaya & Logistik": {
+        "positif": 4,
+        "negatif": 0,
+        "netral": 0
+      },
+      "Jalur & Trek": {
+        "positif": 15,
+        "negatif": 0,
+        "netral": 0
+      },
+      "Pelayanan Petugas": {
+        "positif": 4,
+        "negatif": 0,
+        "netral": 0
+      },
+      "Sampah & Kebersihan": {
+        "positif": 1,
+        "negatif": 0,
+        "netral": 0
+      }
+    },
+    "Basecamp Pendakian Jalur Linggasana": {
+      "Fasilitas Sanitasi": {
+        "positif": 24,
+        "negatif": 0,
+        "netral": 0
+      },
+      "Biaya & Logistik": {
+        "positif": 21,
+        "negatif": 1,
+        "netral": 0
+      },
+      "Jalur & Trek": {
+        "positif": 34,
+        "negatif": 1,
+        "netral": 0
+      },
+      "Pelayanan Petugas": {
+        "positif": 11,
+        "negatif": 1,
+        "netral": 0
+      },
+      "Sampah & Kebersihan": {
+        "positif": 2,
+        "negatif": 0,
+        "netral": 0
+      }
+    },
+    "Jalur Pendakian Trisakti Sadarehe": {
+      "Fasilitas Sanitasi": {
+        "positif": 1,
+        "negatif": 4,
+        "netral": 2
+      },
+      "Biaya & Logistik": {
+        "positif": 4,
+        "negatif": 7,
+        "netral": 2
+      },
+      "Jalur & Trek": {
+        "positif": 11,
+        "negatif": 0,
+        "netral": 3
+      },
+      "Pelayanan Petugas": {
+        "positif": 7,
+        "negatif": 4,
+        "netral": 3
+      },
+      "Sampah & Kebersihan": {
+        "positif": 0,
+        "negatif": 0,
+        "netral": 0
+      }
+    },
+    "Curug Putri Palutungan": {
+      "Fasilitas Sanitasi": {
+        "positif": 68,
+        "negatif": 3,
+        "netral": 4
+      },
+      "Biaya & Logistik": {
+        "positif": 48,
+        "negatif": 11,
+        "netral": 10
+      },
+      "Jalur & Trek": {
+        "positif": 28,
+        "negatif": 0,
+        "netral": 1
+      },
+      "Pelayanan Petugas": {
+        "positif": 8,
+        "negatif": 0,
+        "netral": 0
+      },
+      "Sampah & Kebersihan": {
+        "positif": 9,
+        "negatif": 1,
+        "netral": 0
+      }
+    },
+    "Lembah Cilengkrang": {
+      "Fasilitas Sanitasi": {
+        "positif": 116,
+        "negatif": 5,
+        "netral": 5
+      },
+      "Biaya & Logistik": {
+        "positif": 61,
+        "negatif": 7,
+        "netral": 5
+      },
+      "Jalur & Trek": {
+        "positif": 66,
+        "negatif": 1,
+        "netral": 4
+      },
+      "Pelayanan Petugas": {
+        "positif": 10,
+        "negatif": 0,
+        "netral": 1
+      },
+      "Sampah & Kebersihan": {
+        "positif": 12,
+        "negatif": 3,
+        "netral": 3
+      }
+    },
+    "Bumi Perkemahan Tenjo Laut": {
+      "Fasilitas Sanitasi": {
+        "positif": 33,
+        "negatif": 2,
+        "netral": 2
+      },
+      "Biaya & Logistik": {
+        "positif": 34,
+        "negatif": 2,
+        "netral": 1
+      },
+      "Jalur & Trek": {
+        "positif": 14,
+        "negatif": 0,
+        "netral": 0
+      },
+      "Pelayanan Petugas": {
+        "positif": 5,
+        "negatif": 0,
+        "netral": 0
+      },
+      "Sampah & Kebersihan": {
+        "positif": 2,
+        "negatif": 0,
+        "netral": 0
+      }
+    },
+    "Bumi Perkemahan Ipukan": {
+      "Fasilitas Sanitasi": {
+        "positif": 58,
+        "negatif": 9,
+        "netral": 6
+      },
+      "Biaya & Logistik": {
+        "positif": 44,
+        "negatif": 14,
+        "netral": 9
+      },
+      "Jalur & Trek": {
+        "positif": 26,
+        "negatif": 3,
+        "netral": 2
+      },
+      "Pelayanan Petugas": {
+        "positif": 1,
+        "negatif": 4,
+        "netral": 2
+      },
+      "Sampah & Kebersihan": {
+        "positif": 11,
+        "negatif": 6,
+        "netral": 4
+      }
+    },
+    "Curug Cipeuteuy Majalengka": {
+      "Fasilitas Sanitasi": {
+        "positif": 62,
+        "negatif": 3,
+        "netral": 3
+      },
+      "Biaya & Logistik": {
+        "positif": 50,
+        "negatif": 5,
+        "netral": 6
+      },
+      "Jalur & Trek": {
+        "positif": 50,
+        "negatif": 3,
+        "netral": 11
+      },
+      "Pelayanan Petugas": {
+        "positif": 6,
+        "negatif": 0,
+        "netral": 1
+      },
+      "Sampah & Kebersihan": {
+        "positif": 8,
+        "negatif": 2,
+        "netral": 0
+      }
+    },
+    "Situ Sangiang Majalengka": {
+      "Fasilitas Sanitasi": {
+        "positif": 5,
+        "negatif": 0,
+        "netral": 2
+      },
+      "Biaya & Logistik": {
+        "positif": 6,
+        "negatif": 2,
+        "netral": 1
+      },
+      "Jalur & Trek": {
+        "positif": 5,
+        "negatif": 0,
+        "netral": 0
+      },
+      "Pelayanan Petugas": {
+        "positif": 0,
+        "negatif": 0,
+        "netral": 0
+      },
+      "Sampah & Kebersihan": {
+        "positif": 2,
+        "negatif": 1,
+        "netral": 0
+      }
+    },
+    "Woodland Kuningan": {
+      "Fasilitas Sanitasi": {
+        "positif": 42,
+        "negatif": 7,
+        "netral": 3
+      },
+      "Biaya & Logistik": {
+        "positif": 84,
+        "negatif": 24,
+        "netral": 5
+      },
+      "Jalur & Trek": {
+        "positif": 19,
+        "negatif": 4,
+        "netral": 2
+      },
+      "Pelayanan Petugas": {
+        "positif": 10,
+        "negatif": 11,
+        "netral": 2
+      },
+      "Sampah & Kebersihan": {
+        "positif": 10,
+        "negatif": 5,
+        "netral": 1
+      }
+    }
+  },
+  "pois": [
+    "Basecamp Pendakian Jalur Linggarjati",
+    "Basecamp Pendakian Jalur Linggasana",
+    "Basecamp Pendakian Jalur Palutungan & Apuy",
+    "Bumi Perkemahan Ipukan",
+    "Bumi Perkemahan Tenjo Laut",
+    "Curug Cipeuteuy Majalengka",
+    "Curug Putri Palutungan",
+    "Jalur Pendakian Trisakti Sadarehe",
+    "Lembah Cilengkrang",
+    "Situ Sangiang Majalengka",
+    "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+    "Woodland Kuningan"
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 1,
+      "sentiment": "negatif",
+      "text": "Untuk fasilitas basecamp Palutungan mohon diperbaiki. Saya bilang diperbaiki bukan ditingkatkan. Banyak fasilitas yg (menurut saya) gk layak pakai. Petugasnya memang ramah, baik pula. Tp untuk fasilitas, saya mikir² utk ngasih bintang lima. Saya kira cukup dan mohon perhatian dr pihak pengelola, tak perlu lagi saya berpanjang lebar merinci bagaimana kekurangannya, saya tdk keliru dr apa yg saya sdh sebutkan. Terima kasih",
+      "aspects": [
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 16,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 2,
+      "sentiment": "negatif",
+      "text": "Akses jalan yang kurang baik,..jauh dari kata layak untuk kendaraan yang akan menuju ketempat ini...selebihnya lumayan bisa bikin santai.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 21,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Konturnya tanjakan. Pos 1 sd Pos 2 relatif nyaman dan landai. Pos 2 ke Pos 4 tanjakan dengan akar-akar pohon. Pos 5 ada lokasi berkemah. Pos 5 ke Pos Goa Walet berbatu licin, batu besar, kerikil dan pasir, menguras enerji dan perlu kehati2an. Menjelang puncak sehamparan Edelweiss menunggu. Puncak ada pemandangan indah, kawah. Tetapi anginnya kencang, dingin dan berbau balerang tajam.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 22,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Gagah dan dingin... Gunung tertinggi di Jawa Barat ini jadi destinasi favorit para pendaki. Apalagi jalur pendakian Linggarjati yang sangat menantang.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 23,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Peraturan baru yang di tujukan pada pengunjung (pendaki) pemesanan tiket pendakian melalui online yang terbatas dan msh melalui booking via WhatsApp, dan pemeriksaan kesehatan yang wajib dilakukan namun staf kesehatan tidak sebanding dengan jumlah pendaki membuat banyak yang tidak terlayani dan membuat waktu pendakian ngaret",
+      "aspects": [
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 24,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Tempat wisata Alam Cidadali berada di kaki bukit Gunung Ciremai,sebuah bukit kecil diantara beratus bukit yg mengelilingi Gunung tertinggi di jawa barat. Tempatnya masih benar benar alami,dan masih banyak yg harus di benahi.sudah tersedia Gazebo,mushola Dan toilet..untuk sementara peengunjung ha nya bisa berphoto ria dengan background seadanya.Bila Ada yg berminat mengunjungi tempat ini..jangan lupa persiapkan perlengkapan,Dan pisik yg vit..Dan Hubungi petugas jaga Cidadali Hills.Bpk Kusmanda,Bpk Ismad,atau bisa langsung datang ke rumah (Bpk Kuseri kepala Dusun Mulyaasih -Desa Puncak,kec Cigugur -Kuningan -Jabar)  Untuk sampai ke lokasi dibutuh kan waktu 1jam dari Kota kuningan.. And bisa membawa kendaraan sendiri atau menggunkan ojek,dari titik awal Desa Puncak.atau berjalan kaki sembari memanjakan pandangan melihat panorama Alam Desa puncak & Dusun Mulyaasih.  Demikian ulasan sementara semoga bisa bermanfaat..harapan Saya,selaku warga,semoga tempat wisata Alam Cidadali ini menjadi Salah Satu tujuan wisata para pelancong. .Dan menjadi Salah Satu sumber kehidupan bagi waraga dusun Mulyaasih Desa puncak...tentunya memakmurkan seluruh penghuni Alam Dan yg Ada di sekitarnya..Amin Amin...YRA.",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 25,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Jalan nya jauuuh.. 😫",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 26,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Sejak kebakaran 2019, Gunung Ciremai 3078mdpl, membuka ijin pendakian lagi Agustus 2020. Aku pilih via Jalur Apuy, Majalengka, perjalanan dari Pos 1 hingga 5 lumayan bersih dari sampah. Mulai dari Pos 5 hingga Puncak terlihat bekas-bekas pohon terbakar yang hangus menghitam, namun rerumputan serta Edelweiss sudah subur kembali.",
+      "aspects": [
+        "Jalur & Trek",
+        "Sampah & Kebersihan"
+      ]
+    },
+    {
+      "id": 27,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Tempat enak masih alami  hanya akses jalan yang harus di tempuh dengan jalan kaki sampai ke lokasinya. Belum bisa roda 4",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 32,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Harus coba jalur yg satu ini jalur Linggasana",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 34,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Taman nasional,tapi sampah berserakan dimana-mana",
+      "aspects": [
+        "Sampah & Kebersihan"
+      ]
+    },
+    {
+      "id": 45,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Dari Jalaksana terus ke Linggajati. Adapun pos pendakian sampai puncak berturut-turut Pos Cibunar-Leuweung Datar-Kondang Amis-Kuburan Kuda-Pangalap dan Tanjung Seruni. Dilanjutkan Pos Bapa Tere-Batu Lingga-Sangga Buana I dan Ii-Pos Pangasinan lalu Puncak.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 49,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Review Pendakian Gunung Ciremai via Jalur Sadarehe  Jalur Sadarehe, yang resmi dibuka pada tahun 2022, menawarkan pengalaman mendaki Gunung Ciremai yang cukup menantang namun penuh petualangan. Jalur ini terkenal dengan trek panjang dan terjal yang benar-benar menguji fisik dan mental pendaki.  Trek Panjang dan Menantang Perjalanan dimulai dari Pos 1 hingga Pos 6 yang terasa sangat melelahkan karena jalurnya cukup panjang dan terus menanjak. Trek ini didominasi oleh tanah padat yang licin saat hujan serta akar pohon yang kerap menjadi tantangan tersendiri. Namun, suasana hutan yang rimbun dan asri menjadi sedikit penghibur selama perjalanan.  Memasuki Pos 7 ke Pos 8, yang dikenal sebagai Sangkar Burung, pendaki akan menghadapi medan yang lebih sulit. Tanjakan curam dan sempit menjadi ujian nyata. Tidak hanya itu, kawasan ini juga menjadi salah satu titik pemantauan harimau, memberikan nuansa misteri dan kehati-hatian ekstra saat mendaki.  Biaya Pendakian yang Tidak Murah Untuk mendaki melalui jalur Sadarehe, pendaki harus mempersiapkan dana lebih. Biaya yang harus dikeluarkan mencakup:  Tiket Simaksi: Perizinan resmi untuk mendaki.  Pengecekan Dokter: Wajib dilakukan untuk memastikan kesehatan pendaki.  Ranger Pendakian: Untuk keamanan dan pemanduan selama perjalanan.  Transportasi Transit: Mengantarkan pendaki dari basecamp ke titik awal jalur.  Meskipun biayanya lumayan mahal, pelayanan yang diberikan cukup memadai dan memastikan pendakian berlangsung dengan aman.  Kesimpulan Jalur Sadarehe adalah pilihan yang tepat untuk pendaki berpengalaman yang ingin merasakan tantangan baru di Gunung Ciremai. Trek panjang, medan terjal, dan pemandangan alam yang luar biasa akan memberikan kepuasan tersendiri. Namun, persiapan fisik dan mental yang matang serta dana yang memadai sangat diperlukan. Bagi pendaki pemula, sebaiknya memilih jalur lain yang lebih ramah untuk pengalaman pertama mendaki.",
+      "aspects": [
+        "Jalur & Trek",
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 50,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Naik ke gunung Ciremai via Apuy Simaksi 125.000 include HTM, cek kesehatan, sertifikat dan 1 x makan gratis. Ada penyewaan losbak sebesar rp.50.000 PP homestay - basecamp dan basecamp - homestay. Durasi perjalanan dari basecamp ke pos 5 area camp 8 jam, dari area camp ke puncak 2 jam. Turun dari area camp ke basecamp 3 jam. Kemarin dapetnya full tembok jadi harus remedial lagi. Tapi gapapa pas turun dari puncak kabutnya  kebuka walau kadang ketutup lagi.",
+      "aspects": [
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 51,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Lokasi paling okay buat mengisi waktu liburan bersama keluarga dan teman- teman,bisa meningkatkan team work dan quality time. Kebetulan waktu naek di jalur Linggarjati track nya curam dan nanjak terus. Saran isi airnya di pos ke 2 biar ga terlalu capek bawa barang berat di atas tidak ada mata air lagi. Hemat air dan jalan santai",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 52,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Kuningan itu pemandangannya luar biasa apapun tempat wisatanya, subhanallah indah bangeet.. tapi akses jalannya astaghfirullah hehe.. semoga jalan-jalan di daerah kuningan khususnya yang menuju tempat wisata bisa lebih baik lagi, yang rusak, yang berlubang, dan lainnya dapat diperbaiki. Biar para wisatawan lebih betah lagi. Mari eksplor kuningan",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 53,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Perjalanan ke balai desa terakhir jauh banget dari kota dan lebih baik dilakukan dalam keadaan jalan terang soalnya cukup sempit buat mobil, sih. Parkir terakhir mobil di desa terakhir, tapi ada banyak homestay di sini dan kebanyakan sudah menyediakan persewaan pickup buat naik sampe basecamp. Motor bisa sih naik sampe basecamp & parkir di sana, tapi perhatikan keamanan motor y, soalnya jalannya cukup curam & kalo pas selipan sama mobil mepet bgt itu. Basecamp tutup dari tengah malam sampe pagi jam 7an. Pendakian lewat tengah malam g diijinkan, paling pagi baru jam 6 boleh naik. Kami tektok waktu itu, jadi start nya y jam 6 itu, nyampe basecamp lagi jam 3 sore. Di basecamp kita bayar 75rb sudah termasuk makan 1x di warung yg ditunjuk & sertifikat. Gelang karet tanda masuk dipinjamkan aja pas naik, kalo turun harus balik. Kehilangan gelang harus bayar denda 50rb.",
+      "aspects": [
+        "Jalur & Trek",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 54,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Jalur pendakian yang luar biasa. Sebagai pendaki pemula dan pertama kali mendaki merasa bangga bisa menggapai atap jawa barat.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 55,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Taman Wisata Gunung Ciremai merupakan salah satu destinasi alam unggulan di Jawa Barat yang menawarkan keindahan pegunungan yang masih asri dan menenangkan. Terletak di kawasan Gunung Ciremai, gunung tertinggi di Jawa Barat, tempat ini menjadi daya tarik bagi para pecinta alam, pendaki, maupun wisatawan yang sekadar ingin menikmati udara segar dan pemandangan hijau yang memanjakan mata.  Keunggulan utama dari taman wisata ini adalah lanskap alamnya yang beragam, mulai dari hutan tropis yang rimbun, jalur pendakian yang menantang, hingga sumber mata air alami yang jernih. Suasana di kawasan ini terasa sejuk dan jauh dari hiruk-pikuk perkotaan, menjadikannya tempat yang cocok untuk melepas penat dan menenangkan pikiran. Selain itu, kicauan burung dan suara alam lainnya menambah kesan damai yang sulit ditemukan di tempat lain.  Fasilitas yang tersedia cukup memadai untuk menunjang kegiatan wisata, seperti area parkir, jalur trekking yang tertata, serta beberapa titik istirahat. Bagi pendaki, tersedia beberapa jalur resmi dengan tingkat kesulitan yang bervariasi, sehingga bisa disesuaikan dengan kemampuan masing-masing. Petugas juga cukup sigap dalam memberikan informasi dan menjaga keamanan pengunjung.  Namun, ada beberapa hal yang perlu diperhatikan. Pengunjung diharapkan menjaga kebersihan dan tidak merusak lingkungan, karena kelestarian kawasan ini sangat bergantung pada kesadaran bersama. Selain itu, kondisi cuaca yang cepat berubah di area pegunungan menuntut wisatawan untuk selalu mempersiapkan perlengkapan dengan baik.  Secara keseluruhan, Taman Wisata Gunung Ciremai adalah pilihan tepat bagi siapa saja yang ingin menikmati keindahan alam yang autentik. Dengan panorama yang memukau dan suasana yang menenangkan, tempat ini layak menjadi destinasi favorit bagi wisatawan lokal maupun luar daerah.",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik",
+        "Pelayanan Petugas",
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 56,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Saya lewat BC Apuy, parkiran luas, fasilitas toilet bersih banyak, mushola bersih, banyak warung. Tapi sayang di jalur pendakian masih banyak sampah. Untuk kawan² pendaki yuk belajar menjaga alam dan peduli terhadap sampah. Saya Mendaki pada bulan Mei 2025",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik",
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 57,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Salah satu wisata yang paling menarik di Kuningan. Disebut sebagai Atap Tertinggi di Jawa Barat, jadi penasaran untuk mencapai puncak Gunung Ciremai. Tapi ternyata belum berhasil juga, semoga di suatu saat bisa kembali lagi buat mencapai puncak di sini. Sepanjang perjalanan menuju puncak via Palutungan dihampiri pemandangan hutan sampe di Pos 6. Setelah itu barulah bisa menikmati pemandangan di atas awan. Klo mau mengisi logistik lokasinya ada di Pos 1 Cigowong, ada banyak jual makanan dan minuman. Banyak juga orang-orang yang latihan tektok naik turun gunung di Pos 1 ini.",
+      "aspects": []
+    },
+    {
+      "id": 58,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Ciremai via sadarehe, ngga akan pernah kapok buat ngulang ke ciremai, ladang edelweisnya cantikk banget, sayangnya udah mulai banyak sampah di jalur pendakian+area camp nya.. buat yg naik minta tolong tanggungjawab sama sampahnya, buat gunung cantik ini tetep cantik dgn bawa turun sampahnya... (-) semoga ada perbaikan transportasi dan sarana dari basecamp ke pintu rimba biar lebih nyaman",
+      "aspects": [
+        "Jalur & Trek",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 59,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Di titik kumpul ada banyak warung makanan & tolilet. Sebelum melakukan pendakian ads briefing dulu oleh tim ranger, suasana sangat sejuk & masih sangat alami. Di sarankan tambahan bawa sarung tangan & kaus kaki hangat, kondisi dingin banget wkt malem & di puncak wkt sumit subuh2. Waspada masih banyak BAGAS",
+      "aspects": [
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 65,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Sangat rekomended jalurnya juga ramah. Jalur Apuy lebih singkat dan treknya tertata baik. Simaksi dan cek kesehatan terjangkau. Dapat sertifikat dan dapat free 1x makan. Transport dari parkiran ke basecamp tersedia antar jemput. Orangnya ramah dan baik. Pemandangan nya bagus, view kawah dan lautan awan sunrise nya asik.",
+      "aspects": [
+        "Jalur & Trek",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 66,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "ATAP JAWA BARAT, VIEW LAUTAN AWAN.  Via : Basecamp Palutungan Tiket Online : 8rb Tiket Offline : 50rb Cek Kesehatan : 20rb Parkir Motor : 10rb  Include : Cek kesehatan, makan minum 1x, e-sertifikat pendakian, peta, kantong sampah.  Via jalur Palutungan tergolong cocok buat pemula. View cantik sepanjang jalur pendakian, banyak lutung-lutung liar di pohon pinggir jalur pendaki. Buat yg males jalan kaki bisa juga ngojeg sampe pos 1. Saya wajibkan untuk kalian agar membawa sleeping bag karena suhu yg sangat dingin saat sore-malam hari.  Saya sarankan juga jangan bawa makanan yg amis amis atau bau menyengat karena masih banyak babi hutan. Bagasnya gede gede serem njir, kasian tetangga tendanya diserang bagas gara2 bawa ikan. Btw tempat paling cocok buat camp adalah di pos 6.  Estimasi pendaki pemula yg baru pertama kali naik gunung diatas 3000mdpl sekitar 8-12 jam.  Basecamp - Pos 1 : 1 Jam Pos 1 - Pos 6 : 6 Jam Pos 6 - Puncak : 4 Jam  Salam Lestari, MTMA Losari. November, 2023.",
+      "aspects": [
+        "Jalur & Trek",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 67,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Jalur Apuy the best lah...  Kalo mau ngecamp enak di pos 5 sebenernya, soalnya ke puncak udah deket, paling 2-3 jam. Tapi pas turun ke BC berasa juga jauhnya, dan lumayan di dengkul..  Di pos 4 juga enak sih buat ngecamp. Jadi pas turun berasa cepet sampe di BC.  Dimanapun asal hati senang ya asik2 aja..hehehee ...Nah  nanti dr pos 5 ke arah puncak, kalo cuaca bagus, dari simpang apuy kamu bisa liat Gunung Guntur, Cikuray, Papandayan, Galunggung, kota Garut beserta dodolnya keliatan semua ituuu..🤭🤭. And Goa walet kalo musim ujan gini airnya banyak, malah ada ember penampungan buat kalian yg haus kasih sayang..🤭🤭. Beberapa tegukan bikin dahaga kamu terobati.  Once again, kata gw mah jalur Apuy the best, soalnya gw blm pernah jajal jalur lain..🤣🤣",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 68,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Pendakian terakhir di tahun 2023 Gunung Ciremai (3.078 mdpl) via Sadarehe, Majalengka, Jawa Barat Senin-Selasa,  25-26 Desember 2023, untuk ketiga kalinya menggapai atap negeri Jawa Barat. Kalo sebelumnya lewat jalur Linggar Jati dan Palutungan di Kuningan, kali ini lewat jalur Sadarehe di Majalengka, jalur pendakian yang panjang, berat dan  tidak ada sumber air. Adanya padang sabana di pos terakhir sebelum mendaki puncak, memberikan sensasi yang berbeda dalam pendakian Gn. Ciremai melalui jalur Sadarehe ini.. Sekali2 layak dicoba.. 😊",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 69,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Salah satu Gunung dengan hutan yang masih cukup bagus, rapat, dengan satwa dan floranya yang masih beragam. Ada 5 jalur pendakian resmi. Linggarjati, Palutungan, Apuy, Linggasana, Sadarehe. Masing-masing punya karakter dan keindahan sendiri-sendiri. Menurut saya pribadi, jalur paling enak jalur Sadarehe, jalur paling baru diantara jalur lainnya. Ada savana yang tidak ada di jalur lainnya. Sayangnya, harga tiket masuk/simaksi/retribusi nya tergolong mahal dibanding gunung-gunung Jawa Tengah.",
+      "aspects": [
+        "Jalur & Trek",
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 70,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Ke gunung Ciremai ini tahun 2017, berangkat dari Depok mampir dulu ke UNPAD bareng teman tengah malam. Lewat jalur mana lupa, sepertinya jalur yang paling sering dilewati pendaki. Jalurnya lumayan, ga begitu sulit. Bangun tenda di pos tiga kalau ga salah, agak ke bawah lagi karena tidak ada tempat yang cukup melindungi dari angin. Angin di Ciremai ini cukup kencang, terlebih di puncaknya karena tidak ada pohon yang bisa melindungi dari terpaan angin.  Oh iya di tempat camp itu banyak babi hutan, jadi sekitar tenda harus bersih tidak boleh ada sisa-sisa makanan berserakan. Sampah harus digantung atau disimpan di dalam carrier. Biaya simaksinya sekitar 50 ribuan sudah termasuk makan dan sertifikat.",
+      "aspects": [
+        "Jalur & Trek",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 71,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Jalur pendakian di gunung ini sangat ekstrim. Kondisinya masih sangat asri dengan banyak pepohonan besar. Jika kondisi hujan jalurnya sangat licin. Jalan pos terakhir hingga ke puncak sangat ekstrim, didominasi bebatuan dan pasir. Jika cuaca tidak mendukung diharapkan tidak nekad mendaki gunung ini karena di daerah jalur menuju puncaknya sering ada badai. Jarak antar pos sangat jauh. Di tiap pos juga tidak selalu ada orang yang berjualan sehingga diharapkan membawa bekal yang mencukupi. Walau terkesan cukup menyeramkan jalur menuju puncak gunung ini, pemandangan di puncaknya sangat indah jika sedang tidak berawan. Banyak terdapat bunga Edelweis. Selain itu wilayah kota Kuningan terlihat sangat jelas dari puncak gunung ini.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 73,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "MasyaAllah gunung ciremai via palutungan perjalanan panjang dan mengasikkan niat camp di pos 6 jadi di pos 5 krn sdh kemalaman. Detail pemeriksaan barang, cek kesehatan,  jika bawa sampah kembali dpt ditukar voucher makan setelah turun gunung. Sungguh mengajarkan tanggung jawab dan gunung jd bersih. Ranger yg selalu ramah dan menolong teman2 yg krg sehat. Sumber air di pos 1, perhatikan bnr kebutuhan air yg dibutuhkn jgn sampai krg atau dehidrasi. Alhamdulillah ada warung di pos 6 bg km yg kurang perhitungan bisa beli air disini harga nya lumayan namanya jg di gunung butuh perjuangan kn bawanya.hee Ada ojek gunung mulai di pos 3 dan pos 1 bagi kamu yg krg sehat bs alternatif pake ojek ini saat turun gunung. Ataupun utk keperluan yg lain.",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 74,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Sebuah perjalanan yang amat sangat mengesankan,, tidak bisa terlupakan,, perjalanan mendaki gunung tertinggi di Jawa Barat, atapnya Jawa Barat, yaitu gunung Ciremai,,, bersama sabet adventure,,, Seruuu, asyiiik, menyenangkan,, capeee jugaa,, pegel,, karena lewat jalur linggarjati, jalur pendakian terpanjang untuk mencapai puncak gunung Ciremai....  😁😁😁😁😁  One Of The Best Memories ⭐⭐⭐⭐⭐  👍👍👍👍👍",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 75,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Naek ciremai via apuyy untuk biaya pendakian 55rb + cek kesehatan sama makan satu kali,,  Pemandangan pas di puncak nya mantappp enakkkk cuman kalau mau camp  ati ati banyak bagong harus rapih bekas makanan",
+      "aspects": [
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 76,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "gunung ciremai via apuy, ranger nya banyak dan ramah\" jadi ga perlu takut, dari pos 5 k atas naik trs treknya mantap bgt deh",
+      "aspects": [
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 77,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Pendakian tahun 2016 waktu itu ijin dua hari buat naik ke cermai, lupa dulu lewat jalur mana, yang jelas perjalanan nya seru bgt, dari pos 1 ke  pos  2 sempat ketemu kabut sampai kita gk bisa liat apa apa dan akhirnya kita istirahat buat nunggu kabutnya ilang setelah kabut ilang kita lanjut lagi perjalanan ke pos 2 ,    tracknya lumayan terjal dan licin karena waktu itu hujan grimis,. Pengalaman yang tak terlupakan disini kita sadar bahwa kita sebagai manusia terlihat sangat kecil dari ciptaan Allah yang lainnya. MashaAllah setelah sampai puncak, rasa capek  pegel itu hilang, pemandangan yg luar biasa indah mmpu menghilang kan segala rasa.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 78,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Salah satu taman nasional yang ada dipulau jawa dengan obyek utama gunung ciremai yang berketinggian 3078 meter diatas permukaan laut. Menjadi habitat beberapa flora dan fauna khas jawa, salah satunya kukang jawa dan anaphalis javanica atau yang populer disebut bunga edelweis. Ditaman nasional gunung ciremai terdapat beberapa jalur pendakian diantaranya jalur apuy, palutungan, linggasana, dan linggarjati. Untuk simaksi dikenakan biaya 55.000 per orang dan tercatat terakhir kali 1 mei 2019",
+      "aspects": [
+        "Jalur & Trek",
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 79,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Gunung yang jalurnya panjaaaang dan tentu terbilang sulit. Banyak hewan yang jadi teman perjalanan, kami bertemu sapa dengan kupu-kupu, kancil, bahkan bagas. Sebelum naik ke gunung ini, harus melakukan registrasi secata daring. Melengkapi syarat dan melakukan pembayaran sesuai ketentuan. Akan ada pemeriksaan kesehatan, serta peralatan yang dibawa. Via Palutungan, terdiri dari 8 pos pendakian, pos 6 adalah batas maksimal diperbolehkan bangun tenda. Angin di puncak sangat kencang, hingga berdiri saja susah. Terima kasih Ciremai, pengalaman yang tak terlupakan. Xo",
+      "aspects": [
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 81,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Kesini lewat jalur Apuy..... Suka banget sama pemandangannya. Untuk tiket masuk harganya 50 kalo tidak salah, sudah termasuk 1 kali makan dan biaya kebersihan. Jalurnya cukup bagus dan tidak terlalu curam. Ga nyesal kesini, dan selalu ga tahan dengan dinginnya gunung tapi terbayar dengan pemandangannya yang indah. Yang bawa kendaraan, bisa diparkir di bawah gunung, di basecamp",
+      "aspects": [
+        "Jalur & Trek",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 82,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Gunung tertinggi di Jawa barat dengan pemandangan yang cukup bagus. Hutan masih bagus dan rimbun. Banyan wisata alam di sekitar kaki Gunung Ciremai. Tiket /Simaksi pendakian gunung Ciremai cukup mahal. Total sekitar 75.000 termasuk cek kesehatan (belum parkir dll).",
+      "aspects": [
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 83,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Pemandangan yang ditwarkan sangatlah indah dan asri. Team pengelolanya pun sudah sangat baik. Kebersihan nya sangat baik, baik di basecamp maupun di sepanjang jalan menuju puncak. Hanya sedikit sampah yang pastinya dibuang oleh orang-orang tidak bertanggung jawab.  Jadwal mendaki dan turun pun sudah jelas. Di atas pun kita di periksa dan sudah disuruh turun apabila sudah jamnya turun. Hangan khawatir apabila ada barang tertinggal karena pengurusnya sangat baik akan menyimpannya di basecamp.  Terkait dengan protokol kesehatan, yaaa di tempat ini memang kurang menerapkan protokol kesehatan. Mengingat menggunakan masker mungkin akan menghambat okigen masuk padahal keadaan kira sedang kekurangan oksigen dan butuh bernafas lega. Tetapi tetap selalu cuci jangan dan sebisa mungkin jauhi kerumunan yaa!",
+      "aspects": [
+        "Jalur & Trek",
+        "Sampah & Kebersihan"
+      ]
+    },
+    {
+      "id": 86,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Nanjak via sadarehe. Simaksi 620 rb untuk 4 org. Udah include carter mobil dari pos registrasi ke basecamp yg jauh. Pulangnya juga dapet carteran dari basecamp turun ke bawah. Treknya cukup sulit untuk pemula.",
+      "aspects": [
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 87,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Nyobain pendakian gunung ciremai via jalur baru Trisakti Sadarehe. Dari basecamp awal naik truk ke pintu start pendakian. Warung cuma tersedia satu aja di pintu pendakian ini. Toilet juga terbatas. Jalur ini ada 8 pos tapi yang paling luas dan bisa camping cuma pos 6 dan 8. Pos yang paling kecil adalah pos 7 dan karena kecil banget gak bisa lama lama di sini. Jalur paling menyiksa adalah dari pos 7 ke pos 8 yang penuh debu, trekking pole hampir gak guna, untung beberapa bagian udah ada webbing. Ke puncak masih 1 - 1.5 jam dari pos 8. Ke sini pas musim kemarau dan suhunya sempat drop ke -2°C",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Biaya & Logistik",
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 88,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Naik dari base camp apuy jalur nya sangat menantang sekitar 90 % menanjak mulai dari Pos 1, minimalkan barang yg di bawa, jika tidak di butuhkan lebih baik di titip di Basecamp, persiapkan fisik Klo pas pasan disarankan ditunda saja, Karena sangat menguras stamina jalur via Apuy, di Pos 5 ada ranger yg standby, bisa membantu jika butuh pertolongan, papan petunjuk sepanjang jalur sangat jelas dengan jarak nya, untuk waktu tempuh tergantung fisik masing2, normal nya sampai pos1 sampai 5 enam sampai 7 jam, pos 5 sampai puncak 2-3 jam,",
+      "aspects": [
+        "Jalur & Trek",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 90,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Udah 6x summit ceremai gak pernah bosen selalu via linggarjati, sekarang udah bagus rapi banget marka lengkap disetiap pos ada tempat duduk, kavling buat ngecamp udah diatur dengan rapi. The best sih. Kalo buat menyepi atau sekedar tektok. 😍😍",
+      "aspects": []
+    },
+    {
+      "id": 91,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Gunung yg mempunyai puncak tertinggi di jawa barat , dengan ketinggian 3078 mpdl layak untuk di daki, karena akan memperlihatkan kemegahan puncaknya. Jalur linggasana cukup menantang dengan 9  pos sampai di puncaknya. Dari pos awal pendakian sampai dengan puncak di tempuh waktu 12 jam. Setelah dari puncak dan kembali lagi ke lembah hanya membutuhkan 7 jam.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 92,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Harga simaksi 50 rb, dapet makan pas udah turun sampai basecamp, dapat piagam penghargaan juga, disarankan membawa air berlebih karena sumber air cuma ada di pos 6, bawa logistik yang cukup karena tidak ada yang jualan saat mendaki,jalur pendakian apuy cukup curam,kendaraan roda 4 hanya bisa sampai balai desa,selanjutnya harus naik pickup milik warga tarif perorang 25 rb, kalo pulang pergi bisa lebih murah. Parkir motor 5 rb perhari,tersedia kamar mandi gratis di basecamp dan penjual cendramata  Tidak dianjurkan membawa tisu basah,karena disita nanti pas pengecekan tas:)  Terimakasihh:))",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Biaya & Logistik",
+        "Jalur & Trek",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 95,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Jalur via Apuy, relatif santai. Dijamin gak terlalu nyiksa kok. Cuma pas kemarau, debu beterbangan, musim hujan jalan super licin. Simaksi 50rb, dapet makan di warung 1 kali, asuransi, dan tentu saja untuk pelestarian alam No tisu basah, sampah bawa pulang ya.",
+      "aspects": [
+        "Jalur & Trek",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 96,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Muncak lewat jalur sadarehe... akses jalan menuju BC nya parah jalan bebatuan besar2 di BC post registrasi pendakian msh blm ada petugas standby.. dan lbh repot di BC ini jaringan seluler tdk terjangkau.. utk trek via sadarehe ini.. asiik vegetasi yg rimbun & d sajikan kebun /savanah edelweis d pos 8 keren keren... utk pendaki pemula yg melakukan tektok dari BC ke pos 8 sktr 4jam pos 8 k puncak kuleb 1jam.. jd klo tektok baik nya dari BC sblm jam 7",
+      "aspects": [
+        "Jalur & Trek",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 97,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Tempatnya enak, untuk kalian yang baru atau sudah master mohon sampah jangan di biarkan begitu saja.. Kita harus bisa menjaga ekosistem biar anak cucu kita bisa menikmati di kemudian hari..",
+      "aspects": [
+        "Sampah & Kebersihan"
+      ]
+    },
+    {
+      "id": 98,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Gunung Ciremai tertinggi di Jawa Barat, bersih namun sumber air sangat sedikit, para pendaki harus membawa air yg Banyak untuk mencapai puncak.",
+      "aspects": [
+        "Fasilitas Sanitasi"
+      ]
+    },
+    {
+      "id": 99,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Gunung Ciremai tak pernah ingkar janji. Setiap kali ku langkahkan kaki menuju puncak. ia selalu memberikan kenangan yang indah dan  pelajaran yang baru. Tiap jalur berbeda tantangan, akan tetapi satu tujuan. Yakni Atap Jawa Barat. :)",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 100,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Luar biasa Mt.Ciremai untuk yang hobby hiking bagus trek nya, pemandangan nya indah, Simaksi untuk kesan 75K All.",
+      "aspects": [
+        "Jalur & Trek",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 101,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Salah satu tujuan favourite para pendaki.  Memiliki 4 jalur resmi pendakian: 1. Jalur Apuy. 2. Jalur Linggarjati 3. Jalur Linggasana 4. Jalur Palutungan  Jaur Palutungan ini adalah jalur paling favorite karena punya trek yang paling bervariasi dan cocok untuk pemula.  Trek yang sangat bervariasi, aneka habitat flora yang sangat menawan, dan beberapa habitat fauna.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 104,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Indah luar biasa puncak tertinggi no.1 di Jawa Barat, semoga keindahannya dan alamnya terjaga, tp d pos 6 bnyak sampah d semak2, moga aja bisa di sapu bersih 😁😁😁,",
+      "aspects": [
+        "Sampah & Kebersihan"
+      ]
+    },
+    {
+      "id": 105,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Masyaalloh memang top 1 JABAR jalur menantang harus dgn kesabaran..bonusnya keindahan Ciptaan-NYA",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 106,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Ada pemeriksaan kesehatan, daftar via online. Pendakian lewat jalur Patulungan. Biaya parkir mobil 30rb. Biaya sewa ojek biasa 15rb, motor cross 150rb.",
+      "aspects": [
+        "Jalur & Trek",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 107,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Tempatnya nyaman, orang2nya ramah, MCK nya rapih,cuma sayang buat istirahat sejenak para pendaki kurang memadai.",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 110,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Bersih, simaksi ga terlalu mahal. Tapi saat ini sedang dingin saat malam. Bukan untuk pendaki pemula",
+      "aspects": [
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 111,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Pertama kali saya mendaki gunung. Meski tertinggi di jawa barat, namun jalan-jalan di pos awal mudah untuk pemula. Worth, Pemandangannya mantab! Perlu hati-h ati dari pos 5 ke puncak karena jalan licin.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 113,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "merupakan atap tertinggi Jawa barat, 3078 mdpl, gunung yg gk pernah sepi dari pendaki lokal maupun mancanegara. Kemaren lewat jalur Palutungan, tanjakan asoy nya beneran asoooyy 😂 tapi gk kapok, mau kesini lagi.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 114,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Gunung ciremai adalah gunung yang berketinggian 3078mdpl, walaupun hanya 3ribuan mdpl tapi jangan dianggap remeh gunung yang satu ini, karena basecampnya bukan dari ketinggian yang akan membuat waktu pendakian menjadi lama, dipuncak ada kawah yang masih aktif dan gunung ciremai ini ada beberapa jalur, seperti palutungan, apuy dan linggarjati..",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 115,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Pertama kali muncak ke Gunung Ciremai via Apuy jalurnya menantang bagi pemula, Htm 50k dapat sertifikat+makan",
+      "aspects": [
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 118,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Cool track, real forest, motor trail bisa naik sampe pos 1, jalur linggasana memang paling menantang compare to others",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 119,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Puncak ciremai yang indah via apuy, waktu perjalanan dari pos Apuy sampai puncak sekitar 6-8 jam, jalur ini jalur yang paling mudah dibandingkan jalur yang lain",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 120,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Manajemen taman nasionalnya bagus, rangernya sangat peduli terhadap hikers, cepat tanggap, dan ramah. Jalan untuk hikers jelas. Jalan make juga oke.  Ada 3 jalur, palutungan, apuy, dan linggar jati. Rekomendasi lewat apuy. Palutungan jalannya muter banget, akhirnya saya ga nyampe puncak. Tapi ada mata air di POS 1 palutungan, jadi lumayan bgt buat santai2. Ada pondokkan buat api unggun di situ.  Hati2 salah belok di persimpangan apuy dan palutungan. Banyak yang nyasar akhirnya Naik lagi. Kasian bgt. Tp kalo ketemu ranger bisa dibantu nyebrang dari jalur palutungan ke apuy atau sebaliknya.  Di POS lain ga ada air, jadi bawa yang banyak kalo Mau ke puncak. Agustus kering Dan berangin, jadi perlu buff. Malem lebih dingin Karena lebih berangin.  Stay safe, enjoy the nature.",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Jalur & Trek",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 121,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Gunung Ceremai (seringkali secara salah kaprah dinamakan \"Ciremai\") (Aksara Sunda Baku: ᮌᮥᮔᮥᮀ ᮎᮨᮛᮨᮙᮦ, Latin: Gunung Ceremé) adalah gunung berapi kerucut yang secara administratif termasuk dalam wilayah dua kabupaten, yakni Kabupaten Kuningan  dan Kabupaten Majalengka, Provinsi Jawa Barat. Posisi geografis puncaknya terletak pada 6° 53' 30\" LS dan 108° 24' 00\" BT, dengan ketinggian 3.078 m di atas permukaan laut. Gunung ini merupakan gunung tertinggi di Jawa Barat.  Gunung Ciremai  Gunung Ceremai dari arah Cigugur, Kuningan Titik tertinggi Ketinggian 3078 m (10098 ft)[1] Puncak 2792 m (9160 ft) Masuk dalam daftar Ultra Ribu Koordinat 6°32′S 108°14′E﻿ / ﻿6.53°S 108.24°E Geografi Gunung Ciremai Jawa Barat, Indonesia Geologi Jenis gunung Stratovolcano Letusan terakhir Maret 1951 Pendakian Rute termudah Palutungan Rute normal Apuy Linggarjati Linggasana  Gunung Ceremai dari Jalan Tol Cikopo-Palimanan arah Cirebon  Gunung Ceremai dari Desa Loji, Kecamatan Jatiwangi, Kabupaten Majalengka  G. Careme di awal abad ke-20. Foto koleksi Tropenmuseum Amsterdam. Gunung ini memiliki kawah ganda. Kawah barat yang beradius 400 m terpotong oleh kawah timur yang beradius 600 m. Pada ketinggian sekitar 2.900 m dpl di lereng selatan terdapat bekas titik letusan yang dinamakan Gowa Walet.  Kini G. Ceremai termasuk ke dalam kawasan Taman Nasional Gunung Ciremai (TNGC), yang memiliki luas total sekitar 15.000 hektare.  Nama gunung ini berasal dari kata cereme  (Phyllanthus acidus, sejenis tumbuhan perdu berbuah kecil dengan rada masam), namun seringkali disebut Ciremai, suatu gejala hiperkorek akibat banyaknya nama tempat di wilayah Pasundan yang menggunakan awalan 'ci-' untuk penamaan tempat.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 122,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Kami Naik melalui jalur pendakian Apuy .. BC nya trnyata udah ada di atas gunung , akses mnuju BC bsa sewa pick up atau pakai sepeda motor bergerigi bagi yg berani .jujur prjalanan nya sangat asyik , menantang Dan mnarik prkebunan sayur, mbentang luas di kanan kiri Jalan . Kamar Mandi BC banyak bersih ada mushola , warung\" .pihak BC welcome banget lah ramah , meski aku pakai Bahasa jawa kromo inggil mereka ttap Aja komunikatif .ranger\" pun bgtu, cuaca di sana sangat dingin tentunya jadi lbih baik persiapan prlengkapan  ,dsini jg tidak ada Sumber mata air.NB yg takut Sama babi lbih baik pilih tmpat camp yg ramai,  , Dan jng lupa trash bag iya . Bawa turun sampah ok.terimakasih 🙏",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik",
+        "Pelayanan Petugas",
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 123,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Bagus buat muncak, masih alami meski masih ada aja yg buang sampah sembarngan. Mudah2an kedepannya, pendaki lebih sadar diri membawa sampahnya turun lagi👌",
+      "aspects": [
+        "Sampah & Kebersihan"
+      ]
+    },
+    {
+      "id": 127,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Kemarin muncak ciremai lewat jalur apuy majalengka, htm 50k mantapp sama rombongan silat dari cirebon, cuaca bagus Alhamdulillah pulang selamat semua...thanks ciremai",
+      "aspects": [
+        "Jalur & Trek",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 128,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Ciremai via Sadarehe, view indah pake banget, tapi jalur bikin jari2 kaki menangis... Worth it sih... mantap pokoknya",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 131,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Mantap tempat yang sangat sejuk dan indah. trak jalur pendakian yang menantang dan udara yang sejuk tapi puas karna disana kita bisa nenangkan pikiran.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 134,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Ini adala gunung yg bener2 indah gunung yg mengajarkan artinya menghemat air, kalina harus coba kesini karena gunung ini menurut saya mengajarkan arti sebuah perjalanan kehidupan ( bkn lebay tapi ini menurut versi saya) 😊😊",
+      "aspects": [
+        "Fasilitas Sanitasi"
+      ]
+    },
+    {
+      "id": 141,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Sabtu 17-11-18, saya dg 2 tmn saya mnghabiskan liburan d.gunung Ciremai(via Palutungan) untuk Medan pendakian lumayan buat kaki pegel😁.. view d.puncak pun tak mengecewakan (asal cuaca bagus),klo mau naik musim ujan kurng  recomanded psti jalanan licin apalagi pas summit Krn jalur ny adlh jalur air byk pasir+ batu, overall puas😁,",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 142,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Untuk menuju puncak ciremai bisa melalui jalur Apuy yg berada di Majalengkau, untuk mencapai basecamp lumayan agak jauh dan harus menggunakan kendaraan umum seperti penyewaan mobil pick up kisaran 50  rb/orang dan kita di basecamp bisa menikmati keindahan air terjun Ciremai",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 149,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Menyenangkan, banyak hutan lumut, hati2 kalau camp di pos 5, karena ada babi hutan",
+      "aspects": []
+    },
+    {
+      "id": 151,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Lewat jalur Palutungan. Jalur lumayan apalagi pas tanjakan asoy...bene2 Asoy😂. Hati2 tas yg berisi makanan jangan letakkan diluar tenda, bisa diseret bagong a.k babi hutan.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 153,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Gunung tertinggi di jawa barat, lewat jalur palutungan trek yg lumayan ber variasi namun panjang.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 154,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Lumayan , trek untuk summit ke puncak nya ..  Sangatlah menantang ..",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 155,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Disini merupakan tempat gunung mendaki untuk menuju gunung ciremai yang masuk melalui jalur apuy yang merupakan pos 1 puncak ciremai memiliki 6 pos dan recomendt banget bagi kalian yang mau mendaki gunung kesini karena merupakan puncak gunung tertinggi di jawa barat",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 158,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Jagalah flora, fauna serta lingkungannya, bagi para pengunjung buanglah sampah pada tempatnya agar alam selalu terjaga tetap seperti ini  Nyaman, banyak satwa yg dapat kita amati dari kejauhan",
+      "aspects": [
+        "Sampah & Kebersihan"
+      ]
+    },
+    {
+      "id": 159,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Mantap buat yang suka ngecamp.. Ada air terjun pula.. Nyesel kalo gak mandi",
+      "aspects": [
+        "Fasilitas Sanitasi"
+      ]
+    },
+    {
+      "id": 160,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Pemandangan bagus, jalur yg melelahkan tp puas",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 161,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "jalur Trisakti Saderahe .. jalur yang suka tantangan dalam pendakian .. keren abis pokok nya ..",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 163,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Via Linggarjati track nya ajib gak salah klo di bilang jalur wali dan penuh dengan cerita , mitos , dan sejarah",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 169,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Puncak tertingginya jawa barat. Sebaiknya lebih asik melalui jalur apuy bro",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 171,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Jalur pendakian via Apuy Argapura Majalengka merupakan trek terpendek dari jalur pendakian yang ada. Cuma 8 jam anda bisa sampai di atap Jawa Barat tersebut.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 173,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Meledak pokoknya... 😅 Trek & jalurnya sedap2 gmn gth, heheh",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 174,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Gunung favourite sebagian para pendaki dengan banyak pilihan jalur pendakian sesuai kemampuan kita. di suguhi pemdandangan nan eksotis dan membuat para pendaki betah berada di sini dan membuat rindu.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 175,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "TNGC... adem... bersih..lapor dulu sebelum naik...jgn lupa bawa turun lagi sampah nya....",
+      "aspects": [
+        "Sampah & Kebersihan"
+      ]
+    },
+    {
+      "id": 183,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Pemandangan sangat indah tiket masuk cukup mahal tapi worth it sih, jalanan menuju ke basecamp sempit dan curam",
+      "aspects": [
+        "Jalur & Trek",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 184,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Jalur pendakian Linggarjati sangat wow, tanpa bonus jek.. bagi yg pemula jgn lewat sini, lebih baik pilih jalur pendakian Palutungan atau Apuy 👍",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 185,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Summit gunung ciremai 3078 mdpl melalui jalur apuy majalengka.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 191,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Jalur pendakian cukup bervariasi, wajib persiapan fisik baik pendakian tektok maupun yang camp",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 192,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Penuh cerita, udah mh di bohongi pas d terminal, dapet bus jelek, d jln malah kelabasan, kudu balik lagi pakai ojek, berhenti di restarea hp ilang, pas mau ke basecamp malah mobil angkotnya ga bisa anter, dgn muka melas ahirnya di anter, smp base dapet sambutan hangat, tidur gratis di rumah warga, kasih slimut hangat, yg laen mh tdur di luar, ini tdur di dalem, emang ya usaha perjuangn tu endingnya ga mngecewakan, berikut momen2nya.",
+      "aspects": [
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 194,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Jalur track via apuy  beberapa waktu silam sebelum pandemi",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 201,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Pertama kali naik gunung, langsung tektok di gunung tertinggi di jabar hahahaha. Seru banget! Bisa tektok ges, kalian pasti kuat. Mulai jam 3 malam dari basecamp, turun sampe di basecamp lagi set 8 malam wkwkwkw. Tapi jujur puncaknya worth it banget sih, walaupun memang perjuangan banget sampe sana. Mau banget naik gunung lainnya!",
+      "aspects": []
+    },
+    {
+      "id": 225,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "The breathtaking view of Mount Ciremai from the Hotel Santika Linggarjati is cool and great. It's never boring to gaze at this mountain, it seems to beckon you to visit. The crisp, fresh morning air creates a sacred and romantic atmosphere.",
+      "aspects": [
+        "Fasilitas Sanitasi"
+      ]
+    },
+    {
+      "id": 228,
+      "poi": "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Sangat indah, aman bagus untuk wisata keluarga, tpi hati2 jalan menuju lokasi berkelok",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 231,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 1,
+      "sentiment": "negatif",
+      "text": "Rating basecamp ciremai via apuy: ⭐️ Kita mulai pertama dari akeses jalan yang jelek banget (tidak di rekomendasikan pake motor sampe basecamp) ditambah banyak pungli di sepanjang jalannya, kedua untuk fasilitas seperti tempat istirahat yg terlalu kecil dan kurang nyaman kira kira untuk 10 orang pun kayaknya tidak cukup, yang ketiga km/toilet umum sangat” kotor sekali dan toilet udah banyak yg rusak, yang ke empat untuk pelayanan orang basecamp yg kureng seperti segistrasi buka jam 8 pagi sampe jam 11 doang wkwkwk baru kali ini liat basecamp hanya buka 3 jam doang, pokoknya menurut aku serba aneh lah, dan terakhir untuk biaya simaksi yg cukup mahal dibandingkan dengan basecamp” gunung lain yaitu 125rb perorang itu belum sama parkir, untuk registrasi online sendiri cukup murah yaitu 40rb perorang tetapi pas sampe basecamp di kenakan tambahan biaya lagi wkwkwk (dapet makan tahu,tempe,telor+sertifikat yg tidak di sertai nama dan tidak jelas sertifikat itu untuk apa di bikinnya), menurut saya dengan biaya segitu tingginya tidak pass dengan fasilitas dan pelayanan yg di berikan oleh pihak basecamp. Mungkin hanya sedikit kritik untuk pihak basecamp semoga cepat” di benahi🙏 RATING: -1000",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik",
+        "Pelayanan Petugas",
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 232,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 1,
+      "sentiment": "negatif",
+      "text": "wc bau banget ... tempat wudhu miring dan ada air menggenang yang sudah lama jamuran .. keran buat wudhu cuman cuman 1 itupun hampir bocor .. tempat singgah istirahat pendaki tdk terurus bngt seperti bangunan yg lama tdk terpakai entah knpa al hasil pendaki lbh baik tdr d homestay yg ada d sekitar bc apuy aja ...  padahal bayar lumayan mahal loh 125rb per orang ..tp fasilitas yg d dapetin kya gtt ... sayang bngt ... ngga rekomendasi bngt ke Ciremai via apuy menurut saya ..",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 233,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 1,
+      "sentiment": "negatif",
+      "text": "Banyak warung. Ada pos ranger. Ada gedung breafing. Sayangnya shelter hanya ada di pos 1. Pos 2 -5 gak ada shelter. Padahal pendaki sangat bth uth brteduh jika hujan",
+      "aspects": [
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 234,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 1,
+      "sentiment": "negatif",
+      "text": "basecamp tergajelas dateng jam 10 malem di bc gada siapa siapa, pas dichat malah bilang “penjaganya pada dirumah semua” lah terus yang mau mendaki gimana kocak trus disuruh ke pusat informasi aja buat nginep semalem yang katanya ada lampu dan listrik,  ternyata gada wkwkw mati semua. terus uda komplen gada listrik malah bilang “aduh” doang wkwkw gajelass. katanya pendaftaran buka jam 7, ini malah jam 8 wkwkkw mana warung cuma buka 1 lagi fyi: jangan sewa alat di basecamp, mahal doang gear nya seadanya wkwkw kyk ganiat nyewain tapi harganya muahal bgt gajelass gakan lagi ke ciremai lewat apuy kecewa berat  besoknya ditanya sama salah satu pendaki kenapa listrik nya mati. malah jawab “belum dibayar” kocakk simaksi doang mahal bayar listrik buat bc gabisa",
+      "aspects": [
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 235,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 1,
+      "sentiment": "negatif",
+      "text": "Mahal harga tiketnya 120ribu... Padahal dftr di online jauh lebih murah...",
+      "aspects": [
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 236,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 1,
+      "sentiment": "negatif",
+      "text": "Gak ramah pos regist wkwkkw,kalo ga di izinin MH gapapa sy MH, cuman gausah nyinyir juga atuh,saya Dateng juga baik baik,legeg",
+      "aspects": [
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 237,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 1,
+      "sentiment": "negatif",
+      "text": "penjaga bc nya ga ramah, apalagi yg di pos 5 toxic banget orangnya",
+      "aspects": [
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 239,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 2,
+      "sentiment": "negatif",
+      "text": "Teruntuk para pendaki yang ingin ke BC malam hari hati-hati ada oknum karang taruna meminta Pungli Retribusi Jalan, lokasinya setelah pemukiman didekat perkebunan sayur sebelum villa saung apuy, saya salah satu korban bersama teman lainya dimintai 10.000 per/motor dengan tatapan intimidasi dan memaksa, saya ada bukti karcisnya kejadinya di malam jumat tanggal 27 juni 2025. Dan anehnya ketika kami selesai pendakian siang hari dilokasi tersebut tidak ada pungutan liar retrisusi jalan, padahal kalo pagi dan siang itu ramai pendaki bawa motor mereka bisa untung, tapi ini gak ada jelas sekali ini PUNGLI KEPADA PENDAKI MALAM BC APUY SANGAT MERUGIKAN kami bayar mahal 125.000 simaksi dan harus bayar juga Pungli jalan ? memalukan sekali lagi ini mencoreng nama baik BC apuy semoga ditindak lanjuti aksi PUNGLI PREMAN KAMPUNG ! Jalan desa adalah tanggung jawab perangkat desa, ada dana desa untuk jalan apalagi jalan itu hidup sebagai penyambung perekonomian warga berkebun sayur dan ke BC apuy pedagang dan staf BC kenapa harus membebankan kepada pengunjung yg juga berkontribusi menaikan pendapatan warga setempat. Kami bayar tidak gratis dan murah. Tolong berlaku adil",
+      "aspects": [
+        "Jalur & Trek",
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 242,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Terdapat MCK yang bersih, Warung2 yang menyediakan cemilan dan makanan ringan. Suasanya masih asri. Naik motor bayar tiket parkir 5000.",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 243,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Fasilitas seperti wc, mushola dan parkiran sudah memadai, tapi fasilitas tersebut masih kurang terawat, seperti di dalam wc masih banyak sampah, parkiran juga banyak sampah, dan di mushola sajadahnya kotor padahal mushola diharuskan bersih dan suci agar ibadah kita diterima, mushola kotor karena banyak pendaki yang tidur di mushola, alangkah baiknya para pendaki dilarang tidur di mushola agar mushola tetap bersih, dan alasan para pendaki tidur di mushola sepertinya karena kurangnya fasilitas untuk beristirahat, ada fasilitas istirahat lainnya di bawah pos pendaftaran (bayar parkir) tapi fasilitas itu tidak terawat dengan baik, didalamnya banyak sampah dan lampunya mati, mungkin itu salah satu alasan para pendaki lebih memilih tidur di mushola ketimbang tidur di fasilitas sana, saya harap juga para penjaga pos pendakian via apuy membuat peraturan jam malam, di atas jam 10 agar pendaki bisa beristirahat dengan tenang, soalnya waktu saya beristirahat, sekitar jam 12 malam ranger apuy memutar musik, musiknya dj lagi 😭, melalui pengeras suara(speaker) dan saya dan teman-teman pendaki lain merasa terganggu akan hal tersebut, padahal ranger tersebut melarang para pendaki untuk membawa speaker saat pendakian. Untuk biaya 125k menurut saya, penjaga pos pendakian via apuy masih kurang bisa menjaga dan merawat fasilitas yang ada di pos pendakian. Semoga untuk kedepannya penjaga pos pendakian via apuy bisa merawat dan menjaga kebersihan fasilitas dan area pos dengan baik. Semoga kritik dan saran saya tersampaikan. TERIMAKASIH 🙏",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 244,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Ntah kenapa saya mengikuti titik map disini nyasar dan kebablasan.  Jika memutuskan untuk ke apuy tanyakan jalurnya ke pangkalan ojek yang dekat apuy dan parkirkab saja motornya dibawah. Naik ke atas bisa sewa mobil grumpung 25k/orang.",
+      "aspects": [
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 245,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Mungkin tambahan aja. Untuk toilet dan musholla kalau rutin dibersihkan dan dirapihkan, kran dan pintu yg rusak dibetulin akan semakin perfect si",
+      "aspects": [
+        "Fasilitas Sanitasi"
+      ]
+    },
+    {
+      "id": 246,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Lokasinya jauh dari jalan raya, melewati Medan perkebunan dapat di susuri menggunakan sepeda motor atau mobil pick up. Sebenarnya tempat parkir nya luas, memangkas waktu pendakian Ciremai jauh lebih cepat.  Hanya saja selama covid-19, semua wisata di kabupaten Majalengka ditutup untuk sementara. Untuk kawasan.wisata di kecamatan agrapura sendiri ditutup dari tanggal 23 Desmember 2020 - 8 Januari 2021. Mudahnya bagi yang belum.pernah kesini, bisa mengikuti poin di Google maps. Rekomendasi semoga jalur ke Basecamp yang melalui perbukitan bisa di semen/cor bukannya tanah.",
+      "aspects": [
+        "Jalur & Trek",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 247,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Mines Akses jalan sulit. Curam dan bebatuan belum di aspal. Plusnya pendakian tercepat via apuy cocok buat pemula",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 252,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 3,
+      "sentiment": "netral",
+      "text": "Registrasinya mahal fasilitasnya juga kurang layak seperti toilet dll",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 257,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Gunung diatas 3000mdpl Tektok pertama akuu! Daftar Open trip sendirian di bulan musim hujan. Kena badai di pos 5 menuju puncak wkwk",
+      "aspects": []
+    },
+    {
+      "id": 258,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Menurut saya tempat singgah pendakinya cukup kotor dan tidak terurus. Dan juga saat saya datang sekitaran jam 5 sore tidak ada satupun orang yang menjaga di BC. (hanya saya berdua bersama teman).Tapi mushola dan toletnya cukup bersih 👍🏼 fyi : warung yang buka saat weekday hanya 2",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 259,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "pemandangan sekitarnya indah. Fasilitas lengkap, warung, mushola, Mck, parkir motor. bisa utk singgah & wisata menikmati keindahan lembah.",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 260,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Basecamp pendakian gunung ceremai yang terletak di dusun apuy ( jalur apuy )desa argapura kec. Argamukti kab. Majalengka yang menjadi titik awal pendakian. Untuk fasilitas umum seperti toilet, tempat parkir untuk yang membawa kendaraan pribadi ( motor ) mushola, medical room, sudah tersedia dan cukup nyaman, serta warung dan ruangan istirahat untuk pendaki.",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Biaya & Logistik",
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 261,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "pos pendakian BC apuy berada di ketinggian 1400 mdl.. sebenarnya pemandangan di bc apuy juga dah lumayan mantap karna ada sdi ketinggian 1400 mdpl.. di tempat ini juga tersedia shelter warung warung berjejeran toilet mushola.. lengkap kalo ingin sekedar nerkujung ke tmpat ini",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 262,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Dari jalan utama majalengka lumayan ke bc lumayan, dr desa terakhir ke bc ada mobil. 125k diborong pickup atau pake motor bc diketinggian 2000 bs buat tidur parkir motor 10k, tiket 50k dikasih makan nasi telor dadar tahu tempe sambal dan kol bilangin jgn banyak dikasih penyedap 5k asuransi 20k kesehatan dibuka jam 7 am  Trak enak dari bc ke puncak, akar kokoh siapkan buat poto sesudah pos 5  sesudah puncak apuy hrs mutar bw ke puncak sejati ciremei 4078 mdpl",
+      "aspects": [
+        "Jalur & Trek",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 263,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Harga tiket sama fasilitas lumayan lahhh... Buat kantong pengangguran kaya kami....!!!  Sangat di sayangkan Masih ada saja AKAMSI di masuk desa2 Terimakasih.....",
+      "aspects": [
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 264,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Pos pendakian via Apuy disuguhkan dengan pemandangan pertanian masyarakat lokal,udara sejuk nyaman dengan lingkungan yang bersahabat,singgal ditempat mang.tata orangnya super ramah",
+      "aspects": [
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 265,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "ada 12 warung yg melayani para pendaki sebelum memulai pendakian Toilet banyak dan cukup bersih",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 268,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Tmpat nya enak. Basecamp dengan warung makan dan warung kopi yg banyak. Untuk ambil pendakian via apuy yaa. Harus menggunakan surat kesehatan di hari pendakian. Selain itu tidak boleh. Semoga di lenggang kan yaa. Salam lestari. 🙏",
+      "aspects": [
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 269,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Jalur lebih landai dari palutungan n linggarjati, simaksi 50rb perorang dapat nasi bungkus isi telor, gak ada sungai dijalan n d camp",
+      "aspects": [
+        "Jalur & Trek",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 272,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Jalur apuy, perjalan pos pertama dari hascamp berod",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 275,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Di pos pendakian ini bagus untuk pendaki gunung,  dengan suasana yang nyaman serta warga sekitar pendakian yang ramah,",
+      "aspects": [
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 276,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "sempet shock ajh sama jalan dri masuk ke perkampungan desanya ke bc",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 278,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Trek yg dilalui pos apuy ini lumayan untuk pendaki pemula",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 279,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Pos pendakian gunung ciremai dengan jarak yg cukup pendek Cocok buat pemula",
+      "aspects": []
+    },
+    {
+      "id": 282,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Jalur tercepat dan bersahabat.. dpt makan sertifikat pula.. mantap!",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 283,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Jalur Apuy, Orang nya ramah tamah Disini semua dimulai proses registrasi dan list barang",
+      "aspects": [
+        "Jalur & Trek",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 288,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Pos terdekat dengan jalir termudah menuju gunung ciremai.",
+      "aspects": []
+    },
+    {
+      "id": 289,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Dingin berkabut, ada toilet",
+      "aspects": [
+        "Fasilitas Sanitasi"
+      ]
+    },
+    {
+      "id": 290,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 4,
+      "sentiment": "positif",
+      "text": "Basecamp paling indah,view nya kece",
+      "aspects": []
+    },
+    {
+      "id": 295,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Parkiran luas, fasilitas toilet bersih banyak, mushola bersih, banyak warung. Tapi sayang di jalur pendakian masih banyak sampah. Untuk kawan² pendaki yuk belajar menjaga alam dan peduli terhadap sampah. Saya Mendaki pada bulan Mei 2025",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik",
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 296,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Sebelum masuk ada retribusi 10k Simaksi mahal 100k kesehatan 20k Parkir 5k, baliknya bayar parkir lagi 5k.",
+      "aspects": [
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 298,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Briefing jam 2am sampai pos 5 jam 8 am, karena badai jadi ga dilanjut sampai puncak huhu Simaksi 125k (regis online 35k + 90  Regis ulang offline) hari libur nasional Pulang dapet sertifikat dan makan gratis nasi sebakul tempe tahu telor sambel ijo + satu gelas air aqua 😋 Terimakasih gunung ciremai",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 299,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Alhamdulillah atap Jabar berhasil saya daki. Treknya benar-benar menguras tenaga & pikiran wkwk harus kuat & jangan pantang menyerah pokonya. Naik setelah beres lebaran, treknya akar, tanah, batu. Kebetulan waktu itu ramai jga di pendakian karena momentnya bertepatan libur lebaran. Pengalaman yg ga akan pernah dilupakan sih. Alhamdulillahnya cuacanya juga cerah, viewnya indah banget, bisa menikmati keindahan gunung lain ketika di puncak. Ciremai via apuy memang cihuyy hihi.. yg mau ke atap Jabar pokonya hrs persiapkan segalanya jgn sampai ada yg tertinggal, terutama fisik sih hrs benar-benar kuat. Simaksinya agak pricy sih, tapi terbayarkan dg keindahan alamnya.",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 300,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "21/09/2025 melakukan pendakian gn ciremai via apuy tektok. Dimulai jam 01.00 naik dr rumah singgah ke basecamp berod dg sewa pickup 50k/org perjalanan sekitar 15menit. Tiba d bc registrasi. Krn sudh booking online 35k/org jd hanya tambah 75k/org tunai d bc utk pendakian tektok. Jam 02.00 dimulai briefing dari ranger apuy. Pendakian dimulai puku 02.22. Sepanjang jalan dari pos 1-5 masih tergolong banyak bonus & landai. Jalanan luas setapak tanah merah, tidak begitu susah. Karena tdk ad sumber air & mushola disarankan bawa air yg berlebih utk jaga2. Shelter hanya ada d pos 1 arban & pos 5 camp area. Sampai puncak pukul 08.55 dan cerah, lautan awan & ramai para pendaki. Disarankan utk latihan fisik yg maksimal terlebih dahulu, krn trek yg akan dilalui dr pos 5 sampai puncak cukup terjal & susah. Utk turun hanya 3jam dg berlari. Sampah masih banyak ditemukan sekitar trek. Smg para pendaki yg berkunjung tetap sadar kawasan & jd pendaki yg bertanggung jawab. Oh iya d basecamp terdapat banyak warung juga jd jgn takut kelaparan atau tdk bsa sarapan sblm pendakian. Mushola pun tersedia. Hanya saja toilet ada 5 yg tdk terdapat air.",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik",
+        "Pelayanan Petugas",
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 301,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Jalur yang lumayan menguji kesabaran pendaki pemula seperti aku, meskipun di jalur juga banyak dijumpai pendaki yang tak lagi muda. Jalurnya beragam, ga bosen melaluinya. Sayangnya tidak ada sumber air dan toilet di setiap pos nya, jadi pendaki harus menyediakan persediaan air sesuai kebutuhannya sendiri. Disarankan menggunakan porter, untuk memastikan dapat tempat untuk mendirikan tenda di pos 5, karena di waktu tertentu, jumlah pendaki relatif ramai. Tapi jika tidak tersedia tempat di pos 5, di pos 4 juga banyak tempat yang bisa digunakan untuk mendirikan tenda. Bawa kembali sampahmu turun, karena masih ada saja sampah yg terlihat di sisi jalur..",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Sampah & Kebersihan",
+        "Biaya & Logistik",
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 303,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Trek ramah tapi menyiksa. Hati² bagas pos 4 5bayangan dan pos 5 aga agresif",
+      "aspects": [
+        "Jalur & Trek",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 304,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Mendaki via apuy pasti nya lumayan seru.. dari basecamp ke pos satu bisa naik pikup , kalau ga naik pikup lumayan jauh.. jalur via apuy pasti seru selamat mencoba, photo yang saya sematkan ini pendakian sesudah pos 5 terus ada simpang apuy menuju puncak sekitar 1 jam lah sampe",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 305,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "18-20 April 2025  Jalannya lebih banyak nanjak. Tanah juga. Jadi kalau hujan, licin bgt. Waktu itu krn sudah mau maghrib dan juga mau turun hujan, jadi kami memutuskan untuk membangun tenda di pos 4 dan melanjutkan perjalanan summit di esok hari nya. Hanya saja, saya tidak ikut summit krn harus menyiapkan makanan. Berdasarkan cerita, rute pos 4 ke 5 agak sulit krn jalanan banyak akarnya dan juga saat itu banyak kabutnya.  Makanan berat yang disediakan di warung hanya lauk telor, tempe,tahu,sambal (hanya beberapa warung) tapi seporsi segitu 17k😭. Waktu itu saya makan di warung nomor 4,nasinya blm full mateng hehe dan tidak dapat sambal. Jadi kurang menikmati.  Brg saya juga ada yg tertinggal di warung, tapi sampai saat ini (sudah sebulan berlalu) blm dikirim juga. Ya mungkin ke tempat ekspedisi nya juga jauh. Maaf merepotkan. (Edit. Akhirnya setelah 2 bulan diterima juga brg yg tertinggal nya. Thanks)  Estimasi perjalanan ciremai via apuy Nanjak  Bc ke pos 1    1.5 jam Pos 1 ke pos 2   2.5 jam Pos 2 ke pos 3    2 jam Pos 3 ke pos 4    1.5 jam  Turun Pos 4 ke pos 3    30 menit Pos 3 ke pos 2    45 menit Pos 2 ke pos 1     1 jam Pos 1 ke bc        1 jam",
+      "aspects": [
+        "Jalur & Trek",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 306,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Jalur yang cukup menyiksa kaki, tapi pengalaman yang baru bisa melewati 8 pos  Rekomended camp di pos 8 karena ke puncak hanya perlu 1.5 jam",
+      "aspects": [
+        "Jalur & Trek"
+      ]
+    },
+    {
+      "id": 307,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "mau cerita disini dong, Pendakian ke Gunung Ciremai yg paling gokil dari yg sebelum”nya, Otw dari Jakarta ke Cirebon Majalengka naik motor, sendirian wkwkwk gokil, karena kelelahan diperjalanan, akhirnya pas treking juga lelah, kecapean, start treking jam 3 pagi, sampe puncak jam 8:30. turun jam 10 dari puncak, sampe pos regis jam 12:34 lumayan. ga kapok sih, malah mau lagi, kalo dikasih kesempatan wkwk. sempet kabut tebel pas di pos 5, pesimis bgt ga dapet view, trnyt takdir berkata lain, sampe puncak dikasih view full cerah🤩🤙🏼",
+      "aspects": []
+    },
+    {
+      "id": 308,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Pertamakali mendaki langsung atap jabar, seru banget trek landai diawal hihi, semua orangnya ramah polll dibasecamp, 80rb cek kesehatan sama simaksi parkir 5rb udah free makan ga termasuk minum. Semoga tahun depan bisa main kesini lagii makasi atas pelayanan yang ramah🫶",
+      "aspects": [
+        "Jalur & Trek",
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 309,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Basecampnya nyaman banget, ada wc yg dilengkapi dgn shower & toilet duduk/jongkok, mushola, shelter, tempat parkir, dan warung2. Untuk biaya pendaftaran pendakian sebesar 50k + 20k untuk tes kesehatan, untuk parkir bisa di dalam basecamp atau ke warung sebelum gapura pendaftaran, yg warung itu kayanya lebih aman soalnya indoor fan dijaga 24jam sama yg punya warungnya, tarifnya 10k (motor)",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Biaya & Logistik"
+      ]
+    },
+    {
+      "id": 310,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "mantap memadai untuk pos via apuy, terdapat musholla, kamar mandi cukup, warung makan & ngopi. pendaftaran bisa offline/online. simaksi 75rb per orang dan include voucher makan sekali, nginep, cas an, mandi. disarankan unt sewa pickup dari bawah",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Biaya & Logistik",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 311,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Basecamp pendakian Gn. Ciremai jalur Apuy Argamukti Majalengka  Untuk jalan menuju basecamp bisa pakai motor saja, jalannya beberapa bagian udah beton 2 jalur. Agak ngeri2 kalo pas malem, ujan+berkabut wkwk Parkirannya ada 2, dibawah penitipan(Rp.10.000) dan diatas gratis Ranger nya baik2 semua, kalo kita masih bingung, tanya2 pun informatif banget. Petugas registrasi nya pun sama smpe ngingetin tracking pole ketinggalan.  Tempat istirahat nya lega, ada 2 gedung walaupun gedung yg satunya agak ngeri2. Masjidnya enak poll dan wc nya pun buanyak. Gakkan kekurangan.  Registrasi - 115.000 weekdays dapet voucher makan+sertifikat",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Jalur & Trek",
+        "Pelayanan Petugas"
+      ]
+    },
+    {
+      "id": 312,
+      "poi": "Basecamp Pendakian Jalur Palutungan & Apuy",
+      "rating": 5,
+      "sentiment": "positif",
+      "text": "Basecamp sebelum memulai pendakian Gunung Ciremai via Apuy. Untuk mencapai kesini bisa menggunakan sepeda motor atau naik mobil pick up milik warga, dan sangat tidak disarankan membawa kendaraan pribadi karena jalan yang dilalui cukup curam dan bahaya😁  Banyak warung makan di sini, ada juga yang jual souvenir-souvenir pendakian. Tersedia beberapa toilet juga untuk mandi setelah melakukan pendakian.  Overall basecamp ini cukup nyaman dan menyenangkan😁",
+      "aspects": [
+        "Fasilitas Sanitasi",
+        "Biaya & Logistik",
+        "Jalur & Trek"
+      ]
+    }
+  ]
+}

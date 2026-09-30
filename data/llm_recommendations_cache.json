@@ -1,0 +1,12 @@
+{
+  "status": "AWAITING_BATCH_INFERENCE",
+  "generated_at": "2026-09-30T07:40:00Z",
+  "note": "Pre-computed batch recommendation cache. Jika belum diisi inferensi batch, UI akan menampilkan status offline elegan tanpa mock data palsu.",
+  "pois": {
+    "Taman Nasional Gunung Ciremai (Pusat Balai TNGC)": {
+      "short_term": "Perbaikan mendesak fasilitas sanitasi toilet dan pasokan air bersih pada pos utama Palutungan serta penertiban retribusi parkir dan porter tidak resmi.",
+      "medium_term": "Renovasi shelter peristirahatan kayu yang lapuk, penambahan plang penunjuk kilometer tahan cuaca di pos bayangan, dan pengadaan sistem deposit sampah digital.",
+      "long_term": "Pembangunan eco-toilet ramah lingkungan di atas 2.000 mdpl, sertifikasi ranger nasional, dan digitalisasi kuota pendakian satu pintu (smart-gate)."
+    }
+  }
+}
