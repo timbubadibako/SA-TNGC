@@ -841,23 +841,44 @@ export default function SentimentArenaStudio() {
             </p>
           </div>
 
-          {/* Batasan Masalah & Lingkup Penelitian */}
+          {/* Kartu Latar Belakang & Urgensi Masalah (Diadopsi Singkat dari Metodologi) */}
+          <div className="border border-black bg-white p-6 mb-6">
+            <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-gray-500 mb-3 border-b border-gray-200 pb-2">
+              Latar Belakang Singkat Penelitian
+            </h3>
+            <div className="font-sans text-xs text-gray-800 leading-relaxed flex flex-col gap-3 text-justify">
+              <p>
+                Taman Nasional Gunung Ciremai (TNGC) merupakan kawasan konservasi sekaligus destinasi ekowisata vital di Jawa Barat. Di platform Google Maps, ulasan pengunjung didominasi (&gt;80%) oleh apresiasi keindahan panorama alam murni (contoh: <em>&ldquo;pemandangan indah&rdquo;, &ldquo;sunrise memukau&rdquo;</em>).
+              </p>
+              <p>
+                <strong>Urgensi Masalah:</strong> Tingginya sentimen positif alam murni ini menimbulkan <em>bias kepuasan semu</em> yang menenggelamkan keluhan kritis terhadap fasilitas fisik (seperti toilet kotor, minimnya air pos, sampah, dan ketidakteraturan tarif). Akibatnya, pengelola Balai TNGC kesulitan memetakan area operasional mana yang mendesak untuk dibenahi.
+              </p>
+              <p>
+                <strong>Solusi Sistem:</strong> Penelitian ini menerapkan <em>Two-Stage Filtering</em> untuk menyaring 1.136 ulasan ulasan fasilitas dari 2.216 total data, mengekstraksi sentimen ulasan per 5 domain aspek via Machine Learning & Deep Learning (IndoBERT), serta merumuskan rekomendasi operasional berjenjang waktu melalui integrasi LLM terstruktur.
+              </p>
+            </div>
+          </div>
+
+          {/* Batasan Masalah & Alur Kerja Penelitian */}
           <div className="border border-black bg-[#fafafa] p-6 text-xs font-sans leading-relaxed">
             <h3 className="font-bold text-xs uppercase font-mono mb-3 border-b border-gray-300 pb-2">
-              Batasan Masalah & Lingkup Kajian
+              Ruang Lingkup & Metodologi Penelitian
             </h3>
-            <ul className="list-disc list-inside flex flex-col gap-2 text-gray-700">
+            <ul className="list-disc list-inside flex flex-col gap-2.5 text-gray-700">
               <li>
-                <strong>Sumber Data</strong>: 2.216 ulasan publik Google Maps yang dikumpulkan dari 12 Objek Daya Tarik Wisata Alam (ODTWA) dan jalur pendakian resmi Balai TNGC (Palutungan, Linggarjati, Apuy, Sadarehe, Ipukan, Tenjo Laut, Situ Sangiang, dll.).
+                <strong>Korpus Data Empiris</strong>: 2.216 ulasan ulasan Google Maps dari 12 Objek Daya Tarik Wisata Alam (ODTWA) dan jalur pendakian resmi Balai TNGC (Palutungan, Linggarjati, Apuy, Sadarehe, Ipukan, Tenjo Laut, Situ Sangiang, Cipeuteuy, dll.).
               </li>
               <li>
-                <strong>Filter Dua Tahap (Two-Stage Filtering)</strong>: Mengeliminasi ulasan pujian estetika alam murni (1.080 ulasan) agar menyisakan ulasan operasional/fasilitas riil (1.136 ulasan) demi menghindari bias kepuasan semu.
+                <strong>Pembersihan & Filtering Fasilitas</strong>: Pemisahan ulasan alam murni (1.080 ulasan) dari ulasan fasilitas operasional (1.136 ulasan) menggunakan kamus istilah leksikal dan dialek pendakian Sunda/Ciremai (<em>runtah, tiris, leueur, simaksi</em>).
               </li>
               <li>
-                <strong>Domain Aspek</strong>: Dibatasi pada 5 aspek fasilitas fisik & manajerial: Fasilitas Sanitasi, Biaya & Logistik, Jalur & Trek, Pelayanan Petugas, dan Sampah & Kebersihan.
+                <strong>5 Domain Aspek Kajian</strong>: Fasilitas Sanitasi, Biaya & Logistik, Jalur & Trek, Pelayanan Petugas, dan Sampah & Kebersihan.
               </li>
               <li>
-                <strong>Arsitektur Rekomendasi</strong>: Machine Learning mengekstraksi sentimen per aspek secara murni (Pure ABSA), sedangkan rekomendasi tindakan 3 jenjang waktu (Short, Medium, Long-Term) dirumuskan oleh engine Large Language Model (Gemini 3.1 Flash Lite) dengan pedoman ketat anti-halusinasi (*strict grounding*).
+                <strong>Zero Data Leakage & SMOTE</strong>: Pengujian machine learning klasikal (SVM, LogReg, RF) menggunakan SMOTE hanya pada data latih (<em>X_train</em>) guna menyeimbangkan kelas keluhan minoritas tanpa mengotori data uji (<em>X_test</em>).
+              </li>
+              <li>
+                <strong>Penalaran Rekomendasi LLM</strong>: Rekomendasi tindakan 3 jenjang waktu (Short, Medium, Long-Term) dirumuskan oleh engine LLM (Gemini 3.1 Flash Lite) dengan pedoman ketat <em>strict grounding</em> (tanpa halusinasi fasilitas fiktif).
               </li>
             </ul>
           </div>
