@@ -27,3 +27,4 @@ image.png
 # Environment Variables & Secrets
 .env*
 *.env
+!.env.example
