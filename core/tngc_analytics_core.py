@@ -1,6 +1,6 @@
 """
 Core NLP and Machine Learning Module for TNGC Aspect-Based Sentiment Analysis.
-Standardized, reproducible, and zero-leakage pipeline.
+Standardized, reproducible, and zero-leakage pipeline for academic research.
 """
 
 import re
@@ -8,7 +8,6 @@ import numpy as np
 import pandas as pd
 from typing import Tuple, Dict, Any, List
 
-from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import LinearSVC
@@ -18,7 +17,7 @@ from imblearn.over_sampling import SMOTE
 
 from lexicon_loader import normalize_text_github
 
-# Aspek Khusus Evaluasi Pengelola TNGC
+# 1. Aspek Operasional & Fasilitas Evaluasi Pengelola Balai TNGC
 ASPECT_LEXICON: Dict[str, List[str]] = {
     "aspek_toilet_sanitasi": ["toilet", "kamar mandi", "wc", "air", "mck", "pesing", "kran", "gayung"],
     "aspek_sampah_kebersihan": ["sampah", "kebersihan", "kotor", "plastik", "runtah", "puntung"],
@@ -27,39 +26,15 @@ ASPECT_LEXICON: Dict[str, List[str]] = {
     "aspek_biaya_logistik": ["tiket", "htm", "biaya", "parkir", "harga", "warung", "porter", "ojek", "transportasi", "carter", "mahal", "pungli"]
 }
 
-FACILITY_REGEX_FILTER = r'(?i)\b(toilet|kamar mandi|wc|air|shelter|pos|camp|basecamp|sampah|mushola|kebersihan|fasilitas|mck|listrik|warung|parkir|biaya|tiket|htm|petugas|simaksi|ranger|briefing|ojek|porter|jalan|tali|plang|jalur|trek|transportasi|angkutan|harga|carter|pungli|batu|licin)\b'
-
-ACTION_PLAN_MATRIX: Dict[str, Dict[str, str]] = {
-    "aspek_toilet_sanitasi": {
-        "short": "Jadwal sanitasi toilet basecamp minimum 3 kali sehari dan jaminan ketersediaan air bersih serta sabun cuci tangan.",
-        "medium": "Pipanisasi permanen perbaikan jalur air dari mata air terdekat ke pos sanitasi dan renovasi bilik pintu rusak di Palutungan dan Apuy.",
-        "long": "Pembangunan unit eco-toilet berbasis pengomposan mandiri di pos ketinggian (>2000 mdpl) untuk mencegah pencemaran semak dan sumber air."
-    },
-    "aspek_sampah_kebersihan": {
-        "short": "Distribusi kantong sampah wajib terdata saat registrasi simaksi dan pengetatan inspeksi checklist sampah saat checkout.",
-        "medium": "Penyediaan titik pengumpulan karung sampah pilah di setiap pos bayangan dan program operasi pembersihan gunung berkala.",
-        "long": "Implementasi sistem deposit jaminan sampah digital terintegrasi aplikasi simaksi TNGC dan pusat pengolahan sampah lingkar Ciremai."
-    },
-    "aspek_pelayanan_ranger": {
-        "short": "Standarisasi standar operasional prosedur keramahan petugas loket dan customer service WhatsApp basecamp serta penambahan personel saat akhir pekan.",
-        "medium": "Peningkatan kapasitas infrastruktur server booking simaksi online bebas down dan pelatihan hospitality bagi volunteer dan ranger pos.",
-        "long": "Implementasi smart gate otomatis mandiri berbasis scan barcode terintegrasi e-KTP dan sertifikasi kompetensi ranger pemandu nasional."
-    },
-    "aspek_biaya_logistik": {
-        "short": "Pemasangan papan informasi resmi rincian tarif tiket, asuransi, tes kesehatan, dan retribusi parkir di gerbang masuk basecamp.",
-        "medium": "Penertiban dan standarisasi tarif batas atas angkutan transit (truk/mobil bak Sadarehe) dan panduan harga warung logistik pos.",
-        "long": "Paket ekowisata terpadu (tiket simaksi, tes kesehatan, makan produk UMKM lokal, transportasi) dalam satu platform digital TNGC."
-    },
-    "aspek_jalur_trek": {
-        "short": "Pemasangan pita reflektif fosfor penanda jalur malam dan penggantian tali pengaman webbing yang putus atau lapuk di titik terjal.",
-        "medium": "Pembuatan undakan kayu atau batu penahan erosi tanah di tanjakan terjal dan peremajaan plang penunjuk kilometer anti-cuaca.",
-        "long": "Sistem buka-tutup jalur berkala berbasis daya dukung lingkungan untuk pemulihan vegetasi dan penetapan jalur evakuasi helipad darurat."
-    }
-}
+# 2. Filter Regex untuk Eliminasi Ulasan Estetika Alam Murni (Non-capturing group)
+FACILITY_REGEX_FILTER = r'(?i)\b(?:toilet|kamar mandi|wc|air|shelter|pos|camp|basecamp|sampah|mushola|kebersihan|fasilitas|mck|listrik|warung|parkir|biaya|tiket|htm|petugas|simaksi|ranger|briefing|ojek|porter|jalan|tali|plang|jalur|trek|transportasi|angkutan|harga|carter|pungli|batu|licin)\b'
 
 
 def filter_facility_reviews(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFrame]:
-    """Memisahkan ulasan fasilitas & operasional dari ulasan estetika alam murni."""
+    """
+    Memisahkan ulasan fasilitas & manajerial dari ulasan estetika alam murni.
+    Mengembalikan tuple (df_facility, df_nature).
+    """
     mask = df["review_text"].str.contains(FACILITY_REGEX_FILTER, na=False)
     df_facility = df[mask].copy().reset_index(drop=True)
     df_nature = df[~mask].copy().reset_index(drop=True)
@@ -67,11 +42,14 @@ def filter_facility_reviews(df: pd.DataFrame) -> Tuple[pd.DataFrame, pd.DataFram
 
 
 def preprocess_corpus(df: pd.DataFrame) -> pd.DataFrame:
-    """Membersihkan teks dan menerapkan normalisasi kamus GitHub + istilah lokal."""
+    """
+    Membersihkan teks ulasan dan menerapkan normalisasi kamus resmi + istilah lokal Sunda/pendaki.
+    Menambahkan tagging binary indicator untuk masing-masing aspek operasional.
+    """
     df_out = df.copy()
     df_out["clean_text"] = df_out["review_text"].apply(normalize_text_github)
     
-    # Ekstraksi aspek
+    # Tagging deteksi aspek biner
     for asp, keywords in ASPECT_LEXICON.items():
         pattern = r'\b(?:' + '|'.join(keywords) + r')\b'
         df_out[asp] = df_out["clean_text"].str.contains(pattern, regex=True).astype(int)
@@ -86,7 +64,12 @@ def train_benchmark_models(
     y_test: pd.Series,
     random_state: int = 42
 ) -> Dict[str, Any]:
-    """Melatih Linear SVM, Logistic Regression, dan Random Forest dengan SMOTE."""
+    """
+    Melatih Linear SVM, Logistic Regression, dan Random Forest dengan evaluasi ketat zero data-leakage.
+    1. TF-IDF di-fit HANYA pada X_train_text, lalu transform ke X_test_text.
+    2. SMOTE over-sampling diterapkan HANYA pada X_train_vec.
+    3. Model dievaluasi menggunakan macro-averaged F1 score dan Confusion Matrix pada X_test_vec asli.
+    """
     vectorizer = TfidfVectorizer(max_features=2500, ngram_range=(1, 2))
     X_train_vec = vectorizer.fit_transform(X_train_text)
     X_test_vec = vectorizer.transform(X_test_text)
@@ -123,28 +106,3 @@ def train_benchmark_models(
         "X_train_res_shape": X_train_res.shape,
         "y_train_res_dist": y_train_res.value_counts().to_dict()
     }
-
-
-def map_action_plan(row: pd.Series) -> pd.Series:
-    """Memetakan ulasan komplain/negatif ke matriks rekomendasi berjenjang."""
-    is_negative = str(row.get("sentiment", "")).lower() == "negatif" or row.get("rating", 5) <= 2
-    if not is_negative:
-        return pd.Series({
-            "saran_jangka_pendek": "-",
-            "saran_jangka_menengah": "-",
-            "saran_jangka_panjang": "-"
-        })
-        
-    short_plans, medium_plans, long_plans = [], [], []
-    for asp, plans in ACTION_PLAN_MATRIX.items():
-        if row.get(asp, 0) == 1:
-            label = asp.replace("aspek_", "").replace("_", " ").title()
-            short_plans.append(f"[{label}]: {plans['short']}")
-            medium_plans.append(f"[{label}]: {plans['medium']}")
-            long_plans.append(f"[{label}]: {plans['long']}")
-            
-    return pd.Series({
-        "saran_jangka_pendek": " \n".join(short_plans) if short_plans else "Monitoring berkala kepuasan operasional.",
-        "saran_jangka_menengah": " \n".join(medium_plans) if medium_plans else "Evaluasi berkala kepuasan pengunjung.",
-        "saran_jangka_panjang": " \n".join(long_plans) if long_plans else "Alokasi anggaran tahunan Balai TNGC."
-    })
