@@ -10,6 +10,7 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import gsap from "gsap";
 import frontendData from "./absa_frontend_data.json";
 
 // Register Chart.js components
@@ -55,6 +56,20 @@ export default function SentimentArenaStudio() {
   const [recommendationsMap, setRecommendationsMap] = useState<Record<string, RecommendationData>>({});
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
   const [apiErrorMessage, setApiErrorMessage] = useState<string | null>(null);
+
+  // View Container Ref untuk GSAP
+  const viewContainerRef = useRef<HTMLDivElement | null>(null);
+
+  // GSAP: Smooth subtle entrance animation setiap kali view berganti
+  useEffect(() => {
+    if (viewContainerRef.current) {
+      gsap.fromTo(
+        viewContainerRef.current,
+        { opacity: 0, y: 8 },
+        { opacity: 1, y: 0, duration: 0.35, ease: "power2.out" }
+      );
+    }
+  }, [activeView]);
 
   // Inisialisasi Cache dari LocalStorage
   useEffect(() => {
@@ -263,89 +278,93 @@ export default function SentimentArenaStudio() {
 
   return (
     <div className="flex flex-col min-h-screen bg-[#f9f9f9] text-[#111111]">
-      {/* 1. HEADER DENGAN 3 TAB RESMI */}
-      <header className="h-[60px] flex justify-between items-center px-8 border-b border-black bg-white shrink-0">
-        <div className="text-2xl font-bold tracking-tight">
-          <span className="font-serif italic text-[1.8rem] mr-1">Aspect</span>
-          <span className="text-[1.2rem] mr-2">Sentiment</span>
-          <span className="text-[0.7rem] align-top text-gray-500 font-normal">TNGC Research</span>
-        </div>
-        
-        {/* Navigasi 3 Panel Utama */}
-        <nav className="flex gap-8">
-          <button
-            onClick={() => setActiveView("absa")}
-            className={`font-bold text-sm cursor-pointer pb-0.5 transition-all ${
-              activeView === "absa" ? "text-black border-b-2 border-black" : "text-gray-400 hover:text-black"
-            }`}
-          >
-            ANALISIS ABSA
-          </button>
-          <button
-            onClick={() => setActiveView("metrics")}
-            className={`font-bold text-sm cursor-pointer pb-0.5 transition-all ${
-              activeView === "metrics" ? "text-black border-b-2 border-black" : "text-gray-400 hover:text-black"
-            }`}
-          >
-            METRIK MODEL
-          </button>
-          <button
-            onClick={() => setActiveView("about")}
-            className={`font-bold text-sm cursor-pointer pb-0.5 transition-all ${
-              activeView === "about" ? "text-black border-b-2 border-black" : "text-gray-400 hover:text-black"
-            }`}
-          >
-            PROFIL PENELITIAN
-          </button>
-        </nav>
-
-        <div className="flex items-center gap-3">
-          {activeView === "absa" && (
+      {/* STICKY TOP NAVBAR (HEADER + TICKER BAR) */}
+      <div className="sticky top-0 z-30 bg-white/95 backdrop-blur-md shadow-xs">
+        {/* 1. HEADER DENGAN 3 TAB RESMI */}
+        <header className="h-[60px] flex justify-between items-center px-8 border-b border-black shrink-0">
+          <div className="text-2xl font-bold tracking-tight">
+            <span className="font-serif italic text-[1.8rem] mr-1">Aspect</span>
+            <span className="text-[1.2rem] mr-2">Sentiment</span>
+            <span className="text-[0.7rem] align-top text-gray-500 font-normal">TNGC Research</span>
+          </div>
+          
+          {/* Navigasi 3 Panel Utama */}
+          <nav className="flex gap-8">
             <button
-              onClick={() => setIsSidebarVisible(!isSidebarVisible)}
-              className="text-[0.68rem] font-bold border border-black px-2.5 py-1 hover:bg-black hover:text-white transition-all cursor-pointer"
+              onClick={() => setActiveView("absa")}
+              className={`font-bold text-sm cursor-pointer pb-0.5 transition-all ${
+                activeView === "absa" ? "text-black border-b-2 border-black" : "text-gray-400 hover:text-black"
+              }`}
             >
-              {isSidebarVisible ? "SEMBUNYIKAN PANEL" : "TAMPILKAN PANEL"}
+              ANALISIS ABSA
             </button>
-          )}
-          <span className="text-[0.68rem] font-bold text-green-700 bg-green-50 border border-green-300 px-2 py-1">
-            GEMINI 3.1 FLASH LITE
-          </span>
-        </div>
-      </header>
+            <button
+              onClick={() => setActiveView("metrics")}
+              className={`font-bold text-sm cursor-pointer pb-0.5 transition-all ${
+                activeView === "metrics" ? "text-black border-b-2 border-black" : "text-gray-400 hover:text-black"
+              }`}
+            >
+              METRIK MODEL
+            </button>
+            <button
+              onClick={() => setActiveView("about")}
+              className={`font-bold text-sm cursor-pointer pb-0.5 transition-all ${
+                activeView === "about" ? "text-black border-b-2 border-black" : "text-gray-400 hover:text-black"
+              }`}
+            >
+              PROFIL PENELITIAN
+            </button>
+          </nav>
 
-      {/* 2. TICKER BAR KORPUS EMPIRIS */}
-      <div className="h-[60px] border-b border-black flex bg-white shrink-0 overflow-x-auto">
-        <div className="flex-1 min-w-[140px] px-6 py-2 border-r border-black flex flex-col justify-center cursor-default">
-          <div className="flex items-center gap-2 font-bold text-[0.75rem] text-gray-600">
-            <span className="w-2 h-2 rounded-full bg-[#2ECC71]" /> POSITIF
+          <div className="flex items-center gap-3">
+            {activeView === "absa" && (
+              <button
+                onClick={() => setIsSidebarVisible(!isSidebarVisible)}
+                className="text-[0.68rem] font-bold border border-black px-2.5 py-1 hover:bg-black hover:text-white transition-all cursor-pointer"
+              >
+                {isSidebarVisible ? "SEMBUNYIKAN PANEL" : "TAMPILKAN PANEL"}
+              </button>
+            )}
+            <span className="text-[0.68rem] font-bold text-green-700 bg-green-50 border border-green-300 px-2 py-1">
+              GEMINI 3.1 FLASH LITE
+            </span>
           </div>
-          <div className="text-[1.1rem] font-bold tracking-tight text-[#2ECC71]">1.770</div>
-        </div>
+        </header>
 
-        <div className="flex-1 min-w-[140px] px-6 py-2 border-r border-black flex flex-col justify-center cursor-default">
-          <div className="flex items-center gap-2 font-bold text-[0.75rem] text-gray-600">
-            <span className="w-2 h-2 rounded-full bg-[#E74C3C]" /> NEGATIF
+        {/* 2. TICKER BAR KORPUS EMPIRIS */}
+        <div className="h-[60px] border-b border-black flex shrink-0 overflow-x-auto">
+          <div className="flex-1 min-w-[140px] px-6 py-2 border-r border-black flex flex-col justify-center cursor-default">
+            <div className="flex items-center gap-2 font-bold text-[0.75rem] text-gray-600">
+              <span className="w-2 h-2 rounded-full bg-[#2ECC71]" /> POSITIF
+            </div>
+            <div className="text-[1.1rem] font-bold tracking-tight text-[#2ECC71]">1.770</div>
           </div>
-          <div className="text-[1.1rem] font-bold tracking-tight text-[#E74C3C]">223</div>
-        </div>
 
-        <div className="flex-1 min-w-[140px] px-6 py-2 border-r border-black flex flex-col justify-center cursor-default">
-          <div className="flex items-center gap-2 font-bold text-[0.75rem] text-gray-600">
-            <span className="w-2 h-2 rounded-full bg-[#BDBDBD]" /> NETRAL
+          <div className="flex-1 min-w-[140px] px-6 py-2 border-r border-black flex flex-col justify-center cursor-default">
+            <div className="flex items-center gap-2 font-bold text-[0.75rem] text-gray-600">
+              <span className="w-2 h-2 rounded-full bg-[#E74C3C]" /> NEGATIF
+            </div>
+            <div className="text-[1.1rem] font-bold tracking-tight text-[#E74C3C]">223</div>
           </div>
-          <div className="text-[1.1rem] font-bold tracking-tight text-[#BDBDBD]">223</div>
-        </div>
 
-        <div className="flex-1 min-w-[160px] px-6 py-2 flex flex-col justify-center cursor-default bg-[#fafafa]">
-          <div className="font-bold text-[0.75rem] text-gray-500">TOTAL DATASET RISSET</div>
-          <div className="text-[1.1rem] font-bold tracking-tight text-black">2.216 Ulasan</div>
+          <div className="flex-1 min-w-[140px] px-6 py-2 border-r border-black flex flex-col justify-center cursor-default">
+            <div className="flex items-center gap-2 font-bold text-[0.75rem] text-gray-600">
+              <span className="w-2 h-2 rounded-full bg-[#BDBDBD]" /> NETRAL
+            </div>
+            <div className="text-[1.1rem] font-bold tracking-tight text-[#BDBDBD]">223</div>
+          </div>
+
+          <div className="flex-1 min-w-[160px] px-6 py-2 flex flex-col justify-center cursor-default bg-[#fafafa]">
+            <div className="font-bold text-[0.75rem] text-gray-500">TOTAL DATASET RISSET</div>
+            <div className="text-[1.1rem] font-bold tracking-tight text-black">2.216 Ulasan</div>
+          </div>
         </div>
       </div>
 
-      {/* 3. MAIN CONTENT SESUAI ACTIVE VIEW */}
-      {activeView === "absa" && (
-        <div className="flex flex-1 overflow-hidden flex-col lg:flex-row">
+      {/* 3. MAIN CONTENT WRAPPER DENGAN GSAP ENTRANCE ANIMATION */}
+      <div ref={viewContainerRef} className="flex-1 flex flex-col min-h-0">
+        {activeView === "absa" && (
+          <div className="flex flex-1 overflow-hidden flex-col lg:flex-row">
           {/* SISI KIRI: ANALYTICS + CHART + TABEL ULASAN */}
           <main className={`p-6 flex flex-col gap-4 bg-[#f9f9f9] overflow-y-auto transition-all ${isSidebarVisible ? "flex-[7] border-r border-black" : "flex-1"}`}>
             {/* Global Filter Bar */}
@@ -681,7 +700,7 @@ export default function SentimentArenaStudio() {
 
       {/* VIEW 2: METRIK EVALUASI & KOMPARASI MODEL */}
       {activeView === "metrics" && (
-        <div className="flex-1 p-8 overflow-y-auto max-w-5xl mx-auto w-full">
+        <div className="flex-1 px-8 py-6 overflow-y-auto max-w-5xl mx-auto w-full">
           <div className="border-b-2 border-black pb-3 mb-6 flex justify-between items-baseline">
             <div>
               <h2 className="text-xl font-bold uppercase tracking-tight">Komparasi Performa Model Skripsi</h2>
@@ -789,7 +808,7 @@ export default function SentimentArenaStudio() {
 
       {/* VIEW 3: PROFIL PENELITIAN / DATA MAHASISWA */}
       {activeView === "about" && (
-        <div className="flex-1 p-8 overflow-y-auto max-w-4xl mx-auto w-full">
+        <div className="flex-1 px-8 py-6 overflow-y-auto max-w-5xl mx-auto w-full">
           <div className="border-b-2 border-black pb-3 mb-6">
             <h2 className="text-xl font-bold uppercase tracking-tight">Informasi & Metadata Penelitian Skripsi</h2>
             <p className="text-xs text-gray-600 font-sans mt-0.5">
@@ -797,93 +816,133 @@ export default function SentimentArenaStudio() {
             </p>
           </div>
 
-          {/* Kartu Profil Peneliti */}
-          <div className="border border-black bg-white p-6 mb-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-            <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-gray-500 mb-4 border-b border-gray-200 pb-2">
-              Identitas Peneliti
-            </h3>
+          {/* 1. KARTU IDENTITAS PENELITI (CLEAN EDITORIAL CARD) */}
+          <div className="border border-black bg-white p-5 mb-6 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+            <div className="border-b border-black pb-2 mb-4">
+              <span className="text-[0.68rem] font-mono font-bold uppercase tracking-wider text-gray-500">
+                Informasi Mahasiswa & Peneliti
+              </span>
+            </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans text-xs">
-              <div>
-                <span className="text-gray-500 font-mono text-[0.68rem] block uppercase">Nama Mahasiswa / Peneliti</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 font-sans text-xs">
+              <div className="border-l-2 border-black pl-3 py-0.5">
+                <span className="text-gray-500 font-mono text-[0.62rem] block uppercase">Peneliti</span>
                 <span className="font-bold text-sm text-black">Hari Inaka Hermawan</span>
               </div>
 
-              <div>
-                <span className="text-gray-500 font-mono text-[0.68rem] block uppercase">Nomor Induk Mahasiswa (NIM)</span>
-                <span className="font-mono text-gray-400 italic">[Dalam Konfirmasi]</span>
-              </div>
-
-              <div>
-                <span className="text-gray-500 font-mono text-[0.68rem] block uppercase">Program Studi</span>
+              <div className="border-l-2 border-gray-300 pl-3 py-0.5">
+                <span className="text-gray-500 font-mono text-[0.62rem] block uppercase">Program Studi</span>
                 <span className="font-bold text-black">Sistem Informasi</span>
               </div>
 
-              <div>
-                <span className="text-gray-500 font-mono text-[0.68rem] block uppercase">Institusi Perguruan Tinggi</span>
+              <div className="border-l-2 border-gray-300 pl-3 py-0.5">
+                <span className="text-gray-500 font-mono text-[0.62rem] block uppercase">Fakultas / Kampus</span>
                 <span className="font-bold text-black">Universitas Kuningan (UNIKU)</span>
               </div>
 
-              <div className="md:col-span-2">
-                <span className="text-gray-500 font-mono text-[0.68rem] block uppercase">Dosen Pembimbing</span>
-                <span className="font-mono text-gray-400 italic">[Dalam Konfirmasi]</span>
+              <div className="border-l-2 border-gray-300 pl-3 py-0.5">
+                <span className="text-gray-500 font-mono text-[0.62rem] block uppercase">NIM & Pembimbing</span>
+                <span className="text-gray-500 italic font-mono text-[0.72rem]">[Dalam Konfirmasi]</span>
               </div>
             </div>
           </div>
 
-          {/* Kartu Judul Penelitian Resmi */}
-          <div className="border border-black bg-white p-6 mb-6">
-            <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-gray-500 mb-3 border-b border-gray-200 pb-2">
-              Judul Penelitian Skripsi (Tentatif)
-            </h3>
-            <p className="font-serif italic text-base text-gray-900 leading-relaxed font-bold">
+          {/* 2. KARTU JUDUL RESMI DENGAN CALLOUT */}
+          <div className="border border-black bg-white p-5 mb-6 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+            <span className="text-[0.65rem] font-mono font-bold uppercase text-gray-500 block mb-1">
+              Topik & Judul Penelitian (Tentatif)
+            </span>
+            <p className="font-serif italic text-base text-gray-900 leading-relaxed font-bold border-l-3 border-blue-600 pl-3.5 my-2">
               &ldquo;Analisis Sentimen Berbasis Aspek (Aspect-Based Sentiment Analysis) Ulasan Pengunjung Taman Nasional Gunung Ciremai Menggunakan Machine Learning dan Deep Learning sebagai Dasar Rekomendasi Pengelolaan Kawasan Konservasi&rdquo;
             </p>
           </div>
 
-          {/* Kartu Latar Belakang & Urgensi Masalah (Diadopsi Singkat dari Metodologi) */}
-          <div className="border border-black bg-white p-6 mb-6">
-            <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-gray-500 mb-3 border-b border-gray-200 pb-2">
-              Latar Belakang Singkat Penelitian
-            </h3>
-            <div className="font-sans text-xs text-gray-800 leading-relaxed flex flex-col gap-3 text-justify">
-              <p>
-                Taman Nasional Gunung Ciremai (TNGC) merupakan kawasan konservasi sekaligus destinasi ekowisata vital di Jawa Barat. Di platform Google Maps, ulasan pengunjung didominasi (&gt;80%) oleh apresiasi keindahan panorama alam murni (contoh: <em>&ldquo;pemandangan indah&rdquo;, &ldquo;sunrise memukau&rdquo;</em>).
-              </p>
-              <p>
-                <strong>Urgensi Masalah:</strong> Tingginya sentimen positif alam murni ini menimbulkan <em>bias kepuasan semu</em> yang menenggelamkan keluhan kritis terhadap fasilitas fisik (seperti toilet kotor, minimnya air pos, sampah, dan ketidakteraturan tarif). Akibatnya, pengelola Balai TNGC kesulitan memetakan area operasional mana yang mendesak untuk dibenahi.
-              </p>
-              <p>
-                <strong>Solusi Sistem:</strong> Penelitian ini menerapkan <em>Two-Stage Filtering</em> untuk menyaring 1.136 ulasan ulasan fasilitas dari 2.216 total data, mengekstraksi sentimen ulasan per 5 domain aspek via Machine Learning & Deep Learning (IndoBERT), serta merumuskan rekomendasi operasional berjenjang waktu melalui integrasi LLM terstruktur.
-              </p>
+          {/* 3. MASALAH & SOLUSI: 2 KOLOM POINT-BY-POINT */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            {/* Kolom Kiri: Poin Masalah (Merah Tipis) */}
+            <div className="border border-black bg-white p-5 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between border-b border-red-200 pb-2 mb-3">
+                  <span className="text-xs font-mono font-bold uppercase text-red-700">Problem Statement</span>
+                  <span className="w-2 h-2 rounded-full bg-red-500" />
+                </div>
+                <ul className="flex flex-col gap-2.5 font-sans text-xs text-gray-800">
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-600 font-bold font-mono">01.</span>
+                    <span><strong>Bias Kepuasan Semu:</strong> Ulasan Google Maps didominasi (&gt;80%) oleh pujian keindahan alam murni (<em>&ldquo;bagus&rdquo;, &ldquo;indah&rdquo;</em>).</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-600 font-bold font-mono">02.</span>
+                    <span><strong>Keluhan Tertutup:</strong> Komplain penting seperti toilet kotor, air pos macet, dan tarif tidak resmi tenggelam di data umum.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-600 font-bold font-mono">03.</span>
+                    <span><strong>Rekomendasi Statis Tidak Fleksibel:</strong> Evaluasi pengelola membutuhkan prioritas tindakan yang berjenjang waktu dan adaptif.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Kolom Kanan: Poin Solusi Sistem (Hijau Tipis) */}
+            <div className="border border-black bg-white p-5 flex flex-col justify-between">
+              <div>
+                <div className="flex items-center justify-between border-b border-green-200 pb-2 mb-3">
+                  <span className="text-xs font-mono font-bold uppercase text-green-700">Pendekatan Solusi Sistem</span>
+                  <span className="w-2 h-2 rounded-full bg-green-500" />
+                </div>
+                <ul className="flex flex-col gap-2.5 font-sans text-xs text-gray-800">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 font-bold font-mono">01.</span>
+                    <span><strong>Two-Stage Filtering:</strong> Mengeliminasi 1.080 ulasan alam murni dan menyaring 1.136 ulasan ulasan fasilitas fisik riil.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 font-bold font-mono">02.</span>
+                    <span><strong>5 Domain ABSA:</strong> Klasifikasi sentimen terarah pada Sanitasi, Biaya, Jalur, Petugas, dan Kebersihan Sampah.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 font-bold font-mono">03.</span>
+                    <span><strong>LLM Actionable Policy:</strong> Merumuskan rencana tindakan konkret 3-tier (Short, Medium, Long-Term) via Gemini 3.1 Flash Lite.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          {/* Batasan Masalah & Alur Kerja Penelitian */}
-          <div className="border border-black bg-[#fafafa] p-6 text-xs font-sans leading-relaxed">
-            <h3 className="font-bold text-xs uppercase font-mono mb-3 border-b border-gray-300 pb-2">
-              Ruang Lingkup & Metodologi Penelitian
-            </h3>
-            <ul className="list-disc list-inside flex flex-col gap-2.5 text-gray-700">
-              <li>
-                <strong>Korpus Data Empiris</strong>: 2.216 ulasan ulasan Google Maps dari 12 Objek Daya Tarik Wisata Alam (ODTWA) dan jalur pendakian resmi Balai TNGC (Palutungan, Linggarjati, Apuy, Sadarehe, Ipukan, Tenjo Laut, Situ Sangiang, Cipeuteuy, dll.).
-              </li>
-              <li>
-                <strong>Pembersihan & Filtering Fasilitas</strong>: Pemisahan ulasan alam murni (1.080 ulasan) dari ulasan fasilitas operasional (1.136 ulasan) menggunakan kamus istilah leksikal dan dialek pendakian Sunda/Ciremai (<em>runtah, tiris, leueur, simaksi</em>).
-              </li>
-              <li>
-                <strong>5 Domain Aspek Kajian</strong>: Fasilitas Sanitasi, Biaya & Logistik, Jalur & Trek, Pelayanan Petugas, dan Sampah & Kebersihan.
-              </li>
-              <li>
-                <strong>Zero Data Leakage & SMOTE</strong>: Pengujian machine learning klasikal (SVM, LogReg, RF) menggunakan SMOTE hanya pada data latih (<em>X_train</em>) guna menyeimbangkan kelas keluhan minoritas tanpa mengotori data uji (<em>X_test</em>).
-              </li>
-              <li>
-                <strong>Penalaran Rekomendasi LLM</strong>: Rekomendasi tindakan 3 jenjang waktu (Short, Medium, Long-Term) dirumuskan oleh engine LLM (Gemini 3.1 Flash Lite) dengan pedoman ketat <em>strict grounding</em> (tanpa halusinasi fasilitas fiktif).
-              </li>
-            </ul>
+          {/* 4. ALUR KERJA PENELITIAN: NUMBERED STEP CARDS */}
+          <div className="border border-black bg-white p-5 mb-2 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)]">
+            <span className="text-[0.68rem] font-mono font-bold uppercase text-gray-500 block mb-3 border-b border-gray-200 pb-2">
+              Tahapan Metodologi Penelitian Ilmiah
+            </span>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 font-sans">
+              <div className="border border-gray-200 p-3 bg-[#fafafa] flex flex-col gap-1">
+                <span className="font-mono font-bold text-xs text-blue-700">TAHAP 01</span>
+                <span className="font-bold text-xs text-black">Multi-Target Ingestion</span>
+                <p className="text-[0.7rem] text-gray-600 leading-snug">Pengumpulan 2.216 ulasan ulasan dari 12 ODTWA & basecamp resmi TNGC.</p>
+              </div>
+
+              <div className="border border-gray-200 p-3 bg-[#fafafa] flex flex-col gap-1">
+                <span className="font-mono font-bold text-xs text-blue-700">TAHAP 02</span>
+                <span className="font-bold text-xs text-black">Local Slang Normalizer</span>
+                <p className="text-[0.7rem] text-gray-600 leading-snug">Kamus leksikon bahasa gaul UI + istilah lokal Sunda (<em>runtah, tiris, simaksi</em>).</p>
+              </div>
+
+              <div className="border border-gray-200 p-3 bg-[#fafafa] flex flex-col gap-1">
+                <span className="font-mono font-bold text-xs text-blue-700">TAHAP 03</span>
+                <span className="font-bold text-xs text-black">SMOTE & Benchmark ML</span>
+                <p className="text-[0.7rem] text-gray-600 leading-snug">Zero leakage balancing pada <em>X_train</em> untuk Linear SVM & IndoBERT (90.2%).</p>
+              </div>
+
+              <div className="border border-gray-200 p-3 bg-[#fafafa] flex flex-col gap-1">
+                <span className="font-mono font-bold text-xs text-blue-700">TAHAP 04</span>
+                <span className="font-bold text-xs text-black">Policy Recommendation</span>
+                <p className="text-[0.7rem] text-gray-600 leading-snug">Penalaran terstruktur 3-tier berpedoman <em>strict grounding</em> tanpa halusinasi.</p>
+              </div>
+            </div>
           </div>
         </div>
       )}
+      </div>
 
       {/* 4. FOOTER */}
       <footer className="h-[30px] border-t border-black flex justify-between items-center px-8 text-[0.65rem] bg-[#f4f4f4] text-gray-600 shrink-0">
