@@ -32,3 +32,10 @@ tngc_notebook_bundle/
 .env*
 *.env
 !.env.example
+
+# Scraped raw dumps & intermediate run outputs
+data/scraped_raw/
+Hasil_*.csv
+ml-notebooks/Hasil_*.csv
+ml-notebooks/*.png
+output/
