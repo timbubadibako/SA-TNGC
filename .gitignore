@@ -24,6 +24,10 @@ Thumbs.db
 image.png
 .ipynb_checkpoints/
 
+# Bundles & Zip Archives
+tngc_notebook_bundle/
+*.zip
+
 # Environment Variables & Secrets
 .env*
 *.env
